@@ -1,4 +1,4 @@
-# DJS-JPNとは
+# DJS-JPN
 Discord.js-Japanの略です。
 
 Discord.jsを使ったDiscordBotを作っている組織です
