@@ -1,4 +1,4 @@
-# inkohx.tk
+# inkohx.tk(djs-jpn.github.io)
 DJS=JPNの[公式サイト](https://inkohx.tk)です。
 
 <div>
