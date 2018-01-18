@@ -1,4 +1,7 @@
+<div align="center">
+  <p>
+    <a href="https://discord.gg/DbTpjXV"><img src="https://discordapp.com/api/guilds/391390986770710528/embed.png" alt="Discord" /></a>
+  </p>
+</div>
 # djs-jpn.github.io
-DJS=JPNの[公式サイト](https://djs-jpn.github.io)です。
-
-DJS-JPNの[Discord](https://discord.gg/DbTpjXV)
+DJS=JPNの[公式サイト](https://inkohx.tk)です。
