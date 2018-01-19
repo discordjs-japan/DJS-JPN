@@ -9,7 +9,7 @@ Discord.jsを使ったDiscordBotを作っている組織です
 1. 多機能BOTの制作(Dynoみたいなもの)
 
 ## DJS-JPN(GitHub)のメンバーになりたい方へ
-### 条件があります。
+条件があります。
 1. JavaScriptが出来る事
 1. discord.jsを理解している人
 
