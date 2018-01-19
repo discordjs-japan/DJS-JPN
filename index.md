@@ -16,5 +16,6 @@ Discord.jsを使ったDiscordBotを作っている組織です
 最低限これらが出来ていれば招待を送ります。
 ### 参加方法
 DJS-JPNのDiscordの#general_devにGitHubの名前を書くかInkoHX#8927のDMにGitHubの名前を書いて下さい
-# その他
-[ヘルプ](https://djs-jpn.github.io/help.html)
+# ページ一覧
+[ヘルプ](https://djs-jpn.ga/help.html)
+[開発メンバー](https://djs-jpn.ga/member.html)
