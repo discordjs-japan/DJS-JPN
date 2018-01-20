@@ -16,7 +16,7 @@ Discord.jsを使ったDiscordBotを作っている組織です
 ### 参加方法
 DJS-JPNのDiscordの#general_devにGitHubの名前を書くかInkoHX#8927のDMにGitHubの名前を書いて下さい
 
-<iframe src="https://discordapp.com/widget?id=391390986770710528&theme=dark" width="500" height="500" allowtransparency="true" frameborder="0"></iframe>
+<iframe src="https://discordapp.com/widget?id=391390986770710528&theme=dark" width="750" height="500" allowtransparency="true" frameborder="0"></iframe>
 
 ## ページ一覧
 [ヘルプ](https://djs-jpn.ga/help.html)
