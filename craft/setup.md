@@ -16,7 +16,7 @@
 * [node-opus](https://www.npmjs.com/package/node-opus)を使用したい方: `npm install discord.js node-opus --save`を実行して下さい。
 * [opusscript](https://www.npmjs.com/package/opusscript)を使用したい方: `npm install discord.js opusscript --save`を実行して下さい。
 
-## どちらを実行すればいい?
+### どちらを実行すればいい?
 node-opusをオススメします。
 
 ## 音声パケットの暗号化と復号化を高速化する方法
