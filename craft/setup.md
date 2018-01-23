@@ -20,3 +20,6 @@ node-opusをオススメします。
 ## 音声パケットの暗号化と復号化を高速化する方法
 * [sodium](https://www.npmjs.com/package/sodium): `npm install sodium --save`
 * [libsodium.js](https://www.npmjs.com/package/libsodium-wrappers): `npm install libsodium-wrappers --save`
+
+
+discord.jsを使ったBOT作り | コードを書いて実行してみる(現在制作中です。)
