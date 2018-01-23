@@ -24,4 +24,4 @@ node-opusをオススメします。
 * [libsodium.js](https://www.npmjs.com/package/libsodium-wrappers): `npm install libsodium-wrappers --save`
 
 
-discord.jsを使ったBOT作り | コードを書いて実行してみる(現在制作中です。)
+次(準備中)
