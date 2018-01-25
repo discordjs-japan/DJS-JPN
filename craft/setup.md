@@ -13,6 +13,7 @@
 インストール作業はこれで終了です。
 ## 音楽BOTの使用・作成を考えている方へ
 音楽BOTの使用または作成を考えている方は`npm install discord.js --save`だけでは出来ません。一緒にオーディオエンジンをインストールする必要があります。
+* ffmpeg(絶対に必要): `npm install ffmpeg-binaries`
 * [node-opus](https://www.npmjs.com/package/node-opus)を使用したい方: `npm install discord.js node-opus --save`を実行して下さい。
 * [opusscript](https://www.npmjs.com/package/opusscript)を使用したい方: `npm install discord.js opusscript --save`を実行して下さい。
 
