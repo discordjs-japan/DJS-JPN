@@ -7,4 +7,4 @@
 
 ## その他
 
-これをやってもエラーが出る場合はDiscordの`#report`にエラー内容を報告して下さい。
+これをやってもエラーが出る場合は[Discord](https://discord.gg/DbTpjXV)の`#report`にエラー内容を報告して下さい。
