@@ -26,6 +26,5 @@ DJS-JPNのDiscordの#general_devにGitHubの名前を書くかInkoHX#8927のDM�
 [開発メンバー](https://djs-jpn.ga/member.html)
 
 [discord.jsを使ったBOT作り](https://djs-jpn.ga/craft/setup.html)
- 
+
 [Google+](https://goo.gl/53RQNf)
- 
