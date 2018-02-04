@@ -18,7 +18,7 @@ DJS-JPNのDiscordの#general_devにGitHubの名前を書くかInkoHX#8927のDM�
 
 <iframe src="https://discordapp.com/widget?id=391390986770710528&theme=dark" width="820" height="500" allowtransparency="true" frameborder="0"></iframe>
 
-## ページ一覧
+## URL一覧
 [ヘルプ](https://djs-jpn.ga/help.html)
 
 [DJS-JPNが作ったBOT一覧](https://djs-jpn.ga/bots.html)
@@ -26,3 +26,6 @@ DJS-JPNのDiscordの#general_devにGitHubの名前を書くかInkoHX#8927のDM�
 [開発メンバー](https://djs-jpn.ga/member.html)
 
 [discord.jsを使ったBOT作り](https://djs-jpn.ga/craft/setup.html)
+ 
+[Google+](https://goo.gl/53RQNf)
+ 
