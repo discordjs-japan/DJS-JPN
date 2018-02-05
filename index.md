@@ -4,8 +4,7 @@ Discord.js-Japanの略です。
 Discord.jsを使ったDiscordBOT開発と雑談をしています。
 
 ## 組織の目的(GitHub)
-1. 日本のDiscordBotを増やす
-1. 多機能BOTの制作(Dynoみたいなもの)
+1. 考え中
 
 ## DJS-JPN(GitHub)のメンバーになりたい方へ
 条件があります。
