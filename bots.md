@@ -3,4 +3,4 @@
 
 | BOT名前 | 説明 |
 | :-- | :-- |
-| [Micro](https://djs-jpn.ga/bots/micro) | 組織が中心で制作しているBOTです。 |
+| [Blade](https://djs-jpn.ga/bots/micro) | 組織が中心で制作しているBOTです。 |
