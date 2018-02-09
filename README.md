@@ -1,4 +1,4 @@
-# djs-jpn.ga(djs-jpn.github.io)
+# djs-jpn.ga
 DJS=JPNの[公式サイト](https://djs-jpn.ga)です。
 
 <div>
