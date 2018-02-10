@@ -25,4 +25,4 @@ node-opusをオススメします。
 * [libsodium.js](https://www.npmjs.com/package/libsodium-wrappers): `npm install libsodium-wrappers --save`
 
 
-次(準備中)
+[次](https://djs-jpn.ga/make/step2)
