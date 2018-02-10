@@ -26,6 +26,7 @@ node-opusをオススメします。
 
 ## TokenとClientIDを獲得する
 まず[こちら](https://discordapp.com/developers/applications/me)を開いて下さい。
+
 ### 手順
 1. **New App** をクリック
 1. **APP NAME(BOTの名前)** を書いて **Waiting for form completion**をクリック
@@ -33,9 +34,11 @@ node-opusをオススメします。
 1. **Create a Bot User**をクリックしたら **Yes, do it!** をクリック
 1. そしたら **Username** の下に **Token** があるので **click to reveal** をクリックしてTokenをメモして下さい
 これで獲得は完了です。
+
 ## BOTをサーバーに参加させる
 1. 先ほどメモした **ClientID** を`https://discordapp.com/oauth2/authorize?&client_id=<ここに入れます>&scope=bot&permissions=0`
 1. **ClientID** を打ち込んだらアクセスして導入するサーバーを選択する
+
 #### 注意: `<ここに入れます>` は消してClientIDを入れて下さい
 
 
