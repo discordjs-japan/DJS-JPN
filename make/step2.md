@@ -9,5 +9,8 @@ client.on('ready', () => {
   console.log(`Hello World`);
 });
 
-client.login('token');
+client.login('token'); //ここに先ほどメモしたTokenを入力する
 ```
+
+## 説明
+`client.on('ready', () => {});` = BOTが起動した時
