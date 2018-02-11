@@ -13,4 +13,15 @@ client.login('token'); //ここに先ほどメモしたTokenを入力する
 ```
 
 ## 説明
-`client.on('ready', () => {});` = BOTが起動した時
+
+1. `client.login('token');` = `token`には[セットアップ編](https://djs-jpn.ga/make/setp1)でメモしたtoeknを入力してください。
+1. デスクトップに`bot`というフォルダを生成
+1. `bot` フォルダの中に `index.js` で保存
+
+## BOTを起動する。
+
+1. コンソールを開きます
+1. `cd Desktop\bot` と入力
+1. `node index.js` と入力すればBOTが起動します。
+
+エラーが出た場合はコードを見直しましょう
