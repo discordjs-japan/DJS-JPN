@@ -11,7 +11,7 @@
 | ./ping | 通信速度を表示します。(数字が0に近いほど速いです。) |
 | ./avatar | 自分のプロフィール画像を表示します。|
 | ./translate | テキストを翻訳 |
-| ./discordstats | Discordのサーバー状態を確認
+| ./discordstats | Discordのサーバー状態を確認 |
 
 
 ## [ダウンロード](https://github.com/DJS-JPN/Micro)
