@@ -6,12 +6,12 @@
 
 ## DJS-JPNの開発メンバーになりたい方へ
 DJS-JPNの開発メンバーになるには以下の条件が必要です。
-１. JavaScript、Discord.jsが理解できる方
+１. JavaScript、Discord.jsが理解できる方  
 ２．Discord、Githubのアカウントを持っている方
 
 上記の条件が完了していれば招待を送ります。
 ### DJS-JPNの参加候補方法
-DJS-JPNのDiscordチャンネル#general_devにGitHubの名前を送信するかInkoHX#8927のDMにGitHubの名前を送信をお願いします。
+DJS-JPNのDiscordチャンネル#general_devにGitHubの名前を送信またはDiscordでInkoHX#8927のDMにGitHubの名前を送信をお願いします。
 
 <iframe src="https://discordapp.com/widget?id=391390986770710528&theme=dark" width="820" height="500" allowtransparency="true" frameborder="0"></iframe>
 
