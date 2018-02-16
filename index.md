@@ -5,8 +5,9 @@
 1. 今のDiscordにないボットを作り上げる
 
 ## DJS-JPNの開発メンバーになりたい方へ
-DJS-JPNの開発メンバーになるには以下の条件が必要です。  
-１. JavaScript、Discord.jsが理解できる方  
+DJS-JPNの開発メンバーになるには条件が必要です。
+
+１．JavaScript、Discord.jsが理解できる方  
 ２．Discord、Githubのアカウントを持っている方
 
 上記の条件が完了していれば招待を送ります。
