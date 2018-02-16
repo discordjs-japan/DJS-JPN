@@ -1,27 +1,27 @@
 # DJS-JPN
-[discord.js](https://discord.js.org)を使ったDiscordBOT開発をしている組織です。
+[Discord.js](https://discord.js.org)を使ったDiscordのボットを開発をしているグループです。
 
-## 組織の目的(GitHub)
-1. 今のDiscordBotにはないBOTを作り上げる
+## グループの目的
+1. 今のDiscordにないボットを作り上げる
 
-## DJS-JPN(GitHub)のメンバーになりたい方へ
-条件があります。
-1. JavaScriptが出来る事
-1. discord.jsを理解している人
+## DJS-JPNの開発メンバーになりたい方へ
+DJS-JPNの開発メンバーになるには以下の条件が必要です。
+１. JavaScript、Discord.jsが理解できる方
+２．Discord、Githubのアカウントを持っている方
 
-最低限これらが出来ていれば招待を送ります。
-### GitHubの組織参加方法
-DJS-JPNのDiscordの#general_devにGitHubの名前を書くかInkoHX#8927のDMにGitHubの名前を書いて下さい
+上記の条件が完了していれば招待を送ります。
+### DJS-JPNの参加候補方法
+DJS-JPNのDiscordチャンネル#general_devにGitHubの名前を送信するかInkoHX#8927のDMにGitHubの名前を送信をお願いします。
 
 <iframe src="https://discordapp.com/widget?id=391390986770710528&theme=dark" width="820" height="500" allowtransparency="true" frameborder="0"></iframe>
 
-## URL一覧
+## 関連リンク
 [ヘルプ](https://djs-jpn.ga/help)
 
-[DJS-JPNが作ったBOT一覧](https://djs-jpn.ga/bots)
+[DJS-JPNが開発したボット一覧](https://djs-jpn.ga/bots)
 
 [開発メンバー](https://djs-jpn.ga/member)
 
-[discord.jsを使ったDiscordBOT作り](https://djs-jpn.ga/make/step1)
+[Discord.jsを使ったボットの作成方法](https://djs-jpn.ga/make/step1)
 
 [Google+](https://goo.gl/53RQNf)
