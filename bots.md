@@ -3,4 +3,5 @@
 
 | BOT名前 | 説明 |
 | :-- | :-- |
-| [Blade](https://djs-jpn.ga/bots/Blade) | 組織が中心で制作しているBOTです。 |
+| [Blade](https://djs-jpn.ga/bots/Blade) | オープンソースで開発されているDiscordの多機能ボットです。 |
+| [NightCrystal](https://djs-jpn.ga/bots/NightCrystal) | オープンソースで開発されているDiscordのボットです |
