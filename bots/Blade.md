@@ -11,7 +11,9 @@
 1. 設定が終わったら`start.bat`を実行して下さい。Macの場合は`start.sh`を実行します。
 
 これで起動が出来ます。  
-エラーが出た場合は[こちら](https://djs-jpn.ga/help)をご覧下さい。それでも解決しない場合はDiscordの`#report`に報告して下さい。
+エラーが出た場合は[こちら](https://djs-jpn.ga/help)をご覧下さい。それでも解決しない場合はDiscordの`#report`に報告して下さい。  
+### DocomoAPIのKey入手方法
+[こちら](https://dev.smt.docomo.ne.jp/?p=docs.api.page&api_name=dialogue&p_name=api_1)から出来ます。
 
 > ## コマンド一覧
 
