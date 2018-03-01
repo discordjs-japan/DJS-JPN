@@ -24,6 +24,7 @@
 | avatar | 自分のプロフィール画像を表示します。|
 | translate <翻訳先言語> <テキスト> | テキストを翻訳 |
 | discordstats | Discordのサーバー状態を確認 |
+| talk | DocomoAPIを使った雑談機能 |
 
 
 ## [ダウンロード](https://github.com/DJS-JPN/Blade)
