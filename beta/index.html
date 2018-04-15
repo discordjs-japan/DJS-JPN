@@ -16,6 +16,8 @@
         html {
             overflow-y: scroll;
             font-family: "rounded-mgenplus-1p-light", cursive;
+            -webkit-user-select: none;
+            user-select: none;
         }
 
         p {
@@ -128,6 +130,8 @@
 
                 <h5 class="black-text senn" id="cooperate">DJS-JPN に協力したい</h4>
 
+                    <h6 class="black-text">１．今にない Discord のボットを開発する。</h6>
+
                     <div class="row cardjoin">
                         <div class="col s12 m6">
                             <div class="card light-blue z-depth-5">
@@ -146,9 +150,8 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col l6 s12">
-                                    <h5 class="white-text">DJS-JPN</h5>
-                                    <p class="grey-text text-lighten-4">今の Discord ボットにはないものを目指して...
-                                    </p>
+                                    <h5>DJS-JPN</h5>
+                                    <p class="white-text">今の Discord ボットにはないものを目指して...</p>
                                 </div>
                                 <div class="col l3 s12">
                                     <h5 class="white-text">リンク一覧</h5>
@@ -166,8 +169,8 @@
                                             <a class="white-text" href="https://djs-jpn.ga/help" target="newtab">ヘルプ</a>
                                         </li>
                                         <li>
-                                                <a class="white-text" href="https://djs-jpn.ga" target="newtab">旧デザイン</a>
-                                            </li>
+                                            <a class="white-text" href="https://djs-jpn.ga" target="newtab">旧デザイン</a>
+                                        </li>
                                     </ul>
                                 </div>
                                 <div class="col l3 s12">
@@ -194,7 +197,7 @@
                     </footer>
 
                     <div id="totop">
-                        <a class="btn-floating btn-large waves-effect waves-light light-blue">
+                        <a class="btn-floating btn-large waves-effect waves-light light-blue pulse tooltipped" data-position="left" data-tooltip="ページの一番上までスクロールします">
                             <i class="material-icons white-text">arrow_upward</i>
                         </a>
                     </div>
@@ -204,36 +207,52 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <script type="text/javascript">
         window.jQuery || document.write("<script src='https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js'><\/script>");
+        var loaded = false;
         $("#main").hide();
         $(".preloader-background").delay(1000).fadeOut(500);
+        setTimeout(function () {
+            loaded = true;
+        }, 1500);
         $("#main").delay(500).fadeIn(1000).addClass("animated bounce");
+        $("#totop").hide();
+        $(".tooltipped").tooltip();
+        setTimeout(function () {
+            $("#main").removeClass("animated bounce");
+            $("#totop").fadeIn(500);
+        }, 1500);
 
-        M.toast({html: "DJS-JPN 公式サイトへようこそ！"});
-        M.toast({html: "この通知は時間経過で自動で閉じられます"});
-        M.toast({html: "もし邪魔な場合はスライドで消すこともできます"});
+        setTimeout(function () {
+            M.toast({ html: "DJS-JPN 公式サイトへようこそ！" });
+            M.toast({ html: "この通知は時間経過で自動で閉じられます" });
+            M.toast({ html: "もし邪魔な場合はスライドで消すこともできます" });
+        }, 1000);
 
         $("#totop").click(function () {
             $("body,html").animate({ scrollTop: 0 }, 500);
             return false;
         });
+
         $(".whatbutton").click(function () {
-            $("html,body").animate({ scrollTop: $("#what").offset().top }, 500);
+            $("html,body").animate({ scrollTop: $("#what").offset().top }, 500);;
             return false;
         });
+
         $("#groupbutton").click(function () {
             $("html,body").animate({ scrollTop: $("#group").offset().top }, 500);
             return false;
         });
+
         $("#cooperatebutton").click(function () {
             $("html,body").animate({ scrollTop: $("#cooperate").offset().top }, 500);
             return false;
         });
 
-        $("#main").bind("contextmenu", function (e) {
-            M.toast({html: "このサイトでのコンテキストメニュー表示は禁止されています"})
+        $("html").bind("contextmenu", function () {
+            if (loaded) {
+                M.toast({ html: "このサイトでのコンテキストメニュー表示は禁止されています" });
+            }
             return false;
         });
-
     </script>
 </body>
 
