@@ -1,0 +1,227 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>DJS-JPN - 今の Discord ボットにはないものを目指して...</title>
+
+    <style>
+        @font-face {
+            font-family: "rounded-mgenplus-1p-light";
+            src: local("rounded-mgenplus-1p-light"), url("./font/rounded-mgenplus-1p-light.ttf") format("truetype");
+            font-display: swap;
+        }
+
+        html {
+            overflow-y: scroll;
+            font-family: "rounded-mgenplus-1p-light", cursive;
+        }
+
+        p {
+            display: inline;
+        }
+
+        .preloader-background {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            z-index: 100;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        .senn {
+            padding: .25em 0 .5em .75em;
+            border-left: 6px solid #03a9f4;
+            border-bottom: 1px solid #03a9f4;
+        }
+
+        #totop {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        #totop a {
+            text-decoration: none;
+            text-align: center;
+            display: block;
+        }
+
+        #totop a:hover {
+            text-decoration: none;
+        }
+
+        #totop a:hover {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="preloader-background">
+        <div class="preloader-wrapper big active">
+            <div class="spinner-layer spinner-blue-only">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="main">
+        <nav>
+            <div class="nav-wrapper light-blue">
+                <a href="https://djs-jpn.ga" class="brand-logo">　DJS-JPN
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li>
+                            <a id="whatbutton">DJS-JPN とは？</a>
+                        </li>
+                        <li>
+                            <a id="groupbutton">グループの目的</a>
+                        </li>
+                        <li>
+                            <a id="cooperatebutton">DJS-JPN に協力したい</a>
+                        </li>
+                    </ul>
+            </div>
+        </nav>
+
+        <div class="section no-pad-bot" id="index-banner">
+            <div class="container">
+                <br>
+                <br>
+                <h1 class="header center">
+                    <p class="blue-text">DJS</p>-<p class="red-text">JPN</p>
+                </h1>
+                <div class="row center">
+                    <h5 class="header col s12 light">今の Discord ボットにはないものを目指して...</h5>
+                </div>
+                <div class="row center">
+                    <a id="whatisdjsjpnbutton" class="btn-large waves-effect waves-light light-blue">DJS-JPN とは？</a>
+                </div>
+                <br>
+                <br>
+            </div>
+        </div>
+
+        <h5 class="black-text senn" id="what">DJS-JPN とは？</h4>
+
+            <h6 class="black-text">
+
+                <a href="https://discord.js.org">Discord.JS</a> を使った Discord のボットを開発をしているグループです。</h6>
+
+            <h5 class="black-text senn" id="group">グループの目的</h4>
+
+                <h6 class="black-text">１．今にない Discord のボットを開発する。</h6>
+
+                <h5 class="black-text senn" id="cooperate">DJS-JPN に協力したい</h4>
+
+                    <div class="row cardjoin">
+                        <div class="col s12 m6">
+                            <div class="card light-blue">
+                                <div class="card-content white-text">
+                                    <span class="card-title">公式 Discord グループに参加</span>
+                                    <p>以下のリンクをクリックすし、「招待を受け取る」をクリックすることで、DJS-JPNの公式 Discord サーバーに参加することができます。</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="https://discordapp.com/invite/asZyAa" class="white-text">参加</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <footer class="page-footer light-blue">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col l6 s12">
+                                    <h5 class="white-text">DJS-JPN</h5>
+                                    <p class="grey-text text-lighten-4">今の Discord ボットにはないものを目指して...
+                                    </p>
+                                </div>
+                                <div class="col l3 s12">
+                                    <h5 class="white-text">リンク一覧</h5>
+                                    <ul>
+                                        <li>
+                                            <a class="white-text" href="https://djs-jpn.ga/bots">DJS-JPNが開発したボット</a>
+                                        </li>
+                                        <li>
+                                            <a class="white-text" href="https://djs-jpn.ga/member">開発メンバー</a>
+                                        </li>
+                                        <li>
+                                            <a class="white-text" href="https://djs-jpn.ga/make/step1">Discord.jsを使ったボットの作成方法</a>
+                                        </li>
+                                        <li>
+                                            <a class="white-text" href="https://djs-jpn.ga/help">ヘルプ</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col l3 s12">
+                                    <h5 class="white-text">Connect</h5>
+                                    <ul>
+                                        <li>
+                                            <a class="white-text" href="https://discordapp.com/invite/asZyAa">公式 Discord グループ</a>
+                                        </li>
+                                        <li>
+                                            <a class="white-text" href="https://plus.google.com/communities/102065506910522266374">Google+</a>
+                                        </li>
+                                        <li>
+                                            <a class="white-text" href="https://github.com/DJS-JPN">Github</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-copyright light-blue darken-2">
+                            <div class="container">
+                                Designed by NULL Code JP
+                            </div>
+                        </div>
+                    </footer>
+
+                    <div id="totop">
+                        <a class="btn-floating btn-large waves-effect waves-light light-blue">
+                            <i class="material-icons white-text">arrow_upward</i>
+                        </a>
+                    </div>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script type="text/javascript">
+        window.jQuery || document.write("<script src='https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js'><\/script>");
+        $("#main").hide();
+        $(".preloader-background").delay(1000).fadeOut(500);
+        $("#main").delay(500).fadeIn(1000).addClass("animated bounce");
+
+        $("#totop").click(function () {
+            $("body,html").animate({ scrollTop: 0 }, 500);
+            return false;
+        });
+        $("#whatbutton").click(function () {
+            $("html,body").animate({ scrollTop: $("#what").offset().top }, 500);
+            return false;
+        });
+        $("#groupbutton").click(function () {
+            $("html,body").animate({ scrollTop: $("#group").offset().top }, 500);
+            return false;
+        });
+        $("#cooperatebutton").click(function () {
+            $("html,body").animate({ scrollTop: $("#cooperate").offset().top }, 500);
+            return false;
+        });
+    </script>
+</body>
+
+</html>
