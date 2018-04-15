@@ -1,4 +1,7 @@
 # DJS-JPN
+> ## 注意
+このページは旧デザインとして扱われており、[こちら](https://djs-jpn.ga/beta)から新デザインのページへと行けますが、新デザインは現在制作途中ですので、ご注意ください。
+
 [Discord.js](https://discord.js.org)を使ったDiscordのボットを開発をしているグループです。
 
 > ## グループの目的  
@@ -28,3 +31,5 @@ DJS-JPNの開発メンバーになるには条件が必要です。
 [Discord.jsを使ったボットの作成方法](https://djs-jpn.ga/make/step1)
 
 [Google+](https://goo.gl/53RQNf)
+
+[新デザイン](https://goo.gl/53RQNf)
