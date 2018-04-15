@@ -130,7 +130,7 @@
 
                     <div class="row cardjoin">
                         <div class="col s12 m6">
-                            <div class="card light-blue">
+                            <div class="card light-blue z-depth-5">
                                 <div class="card-content white-text">
                                     <span class="card-title">公式 Discord グループに参加</span>
                                     <p>以下のリンクをクリックすし、「招待を受け取る」をクリックすることで、DJS-JPNの公式 Discord サーバーに参加することができます。</p>
@@ -205,6 +205,10 @@
         $(".preloader-background").delay(1000).fadeOut(500);
         $("#main").delay(500).fadeIn(1000).addClass("animated bounce");
 
+        M.toast({html: "DJS-JPN 公式サイトへようこそ！"});
+        M.toast({html: "この通知は時間経過で自動で閉じられます"});
+        M.toast({html: "もし邪魔な場合はスライドで消すこともできます"});
+
         $("#totop").click(function () {
             $("body,html").animate({ scrollTop: 0 }, 500);
             return false;
@@ -221,6 +225,12 @@
             $("html,body").animate({ scrollTop: $("#cooperate").offset().top }, 500);
             return false;
         });
+
+        $("#main").bind("contextmenu", function (e) {
+            M.toast({html: "このサイトでのコンテキストメニュー表示は禁止されています"})
+            return false;
+        });
+
     </script>
 </body>
 
