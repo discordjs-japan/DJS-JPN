@@ -86,7 +86,7 @@
                 <a href="https://djs-jpn.ga" class="brand-logo">　DJS-JPN
                     <ul id="nav-mobile" class="right hide-on-med-and-down">
                         <li>
-                            <a id="whatbutton">DJS-JPN とは？</a>
+                            <a class="whatbutton">DJS-JPN とは？</a>
                         </li>
                         <li>
                             <a id="groupbutton">グループの目的</a>
@@ -109,7 +109,7 @@
                     <h5 class="header col s12 light">今の Discord ボットにはないものを目指して...</h5>
                 </div>
                 <div class="row center">
-                    <a id="whatbutton" class="btn-large waves-effect waves-light light-blue">DJS-JPN とは？</a>
+                    <a class="btn-large waves-effect waves-light light-blue whatbutton">DJS-JPN とは？</a>
                 </div>
                 <br>
                 <br>
@@ -154,17 +154,20 @@
                                     <h5 class="white-text">リンク一覧</h5>
                                     <ul>
                                         <li>
-                                            <a class="white-text" href="https://djs-jpn.ga/bots">DJS-JPNが開発したボット</a>
+                                            <a class="white-text" href="https://djs-jpn.ga/bots" target="newtab">DJS-JPNが開発したボット</a>
                                         </li>
                                         <li>
-                                            <a class="white-text" href="https://djs-jpn.ga/member">開発メンバー</a>
+                                            <a class="white-text" href="https://djs-jpn.ga/member" target="newtab">開発メンバー</a>
                                         </li>
                                         <li>
-                                            <a class="white-text" href="https://djs-jpn.ga/make/step1">Discord.jsを使ったボットの作成方法</a>
+                                            <a class="white-text" href="https://djs-jpn.ga/make/step1" target="newtab">Discord.jsを使ったボットの作成方法</a>
                                         </li>
                                         <li>
-                                            <a class="white-text" href="https://djs-jpn.ga/help">ヘルプ</a>
+                                            <a class="white-text" href="https://djs-jpn.ga/help" target="newtab">ヘルプ</a>
                                         </li>
+                                        <li>
+                                                <a class="white-text" href="https://djs-jpn.ga" target="newtab">旧デザイン</a>
+                                            </li>
                                     </ul>
                                 </div>
                                 <div class="col l3 s12">
@@ -213,7 +216,7 @@
             $("body,html").animate({ scrollTop: 0 }, 500);
             return false;
         });
-        $("#whatbutton").click(function () {
+        $(".whatbutton").click(function () {
             $("html,body").animate({ scrollTop: $("#what").offset().top }, 500);
             return false;
         });
