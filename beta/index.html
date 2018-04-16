@@ -298,7 +298,6 @@
         window.jQuery || function () {
             document.getElementById("loading").innerText = "現在 Google のサーバーがダウンしているため、サイトにアクセスできません"
         };
-        var loaded = false;
         if (navigator.userAgent.toLowerCase().match(/chrome|firefox|opera/)) {
             $(".loading").text("読み込み中...");
         } else {
@@ -315,7 +314,6 @@
                     $("title").text("DJS-JPN - 今の Discord ボットにはないものを目指して...");
                     $("html").css("cursor", "auto")
                     setTimeout(function () {
-                        loaded = true;
                         M.toast({ html: "DJS-JPN 公式サイトへようこそ！" });
                         M.toast({ html: "この通知は時間経過で自動で閉じられます" });
                         M.toast({ html: "もし邪魔な場合はスライドで消すこともできます" });
