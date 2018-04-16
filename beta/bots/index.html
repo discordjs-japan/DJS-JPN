@@ -1,0 +1,320 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Loading</title>
+
+    <style>
+        @font-face {
+            font-family: "rounded-mgenplus-1p-light";
+            src: local("rounded-mgenplus-1p-light"), url("./font/rounded-mgenplus-1p-light.ttf") format("truetype");
+            font-display: swap;
+        }
+
+        html {
+            overflow-y: scroll;
+            font-family: "rounded-mgenplus-1p-light", cursive;
+            -webkit-user-select: none;
+            user-select: none;
+            cursor: wait;
+        }
+
+        p {
+            display: inline;
+        }
+
+        .preloader-background {
+            display: flex;
+            position: fixed;
+            align-items: center;
+            justify-content: center;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        .preloader-wrapper {
+            position: fixed;
+        }
+
+        .loading {
+            display: flex;
+            position: fixed;
+            align-items: center;
+            justify-content: center;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            font-size: 150%;
+            padding-top: 120px;
+        }
+
+        .senn {
+            padding: .25em 0 .5em .75em;
+            border-left: 6px solid #03a9f4;
+            border-bottom: 1px solid #03a9f4;
+        }
+
+        #totop {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        #totop a {
+            text-decoration: none;
+            text-align: center;
+            display: block;
+        }
+
+        #totop a:hover {
+            text-decoration: none;
+        }
+
+        #totop a:hover {
+            text-decoration: none;
+        }
+
+        h6 {
+            padding-left: 20px;
+        }
+
+        #djsjpn {
+            padding-left: 30px;
+        }
+
+        #main {
+            display: none;
+        }
+
+        .link {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="preloader-background">
+        <div class="preloader-wrapper big active">
+            <div class="spinner-layer spinner-blue">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+
+            <div class="spinner-layer spinner-red">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+
+            <div class="spinner-layer spinner-yellow">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+
+            <div class="spinner-layer spinner-green">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+        <h6 class="loading"></h6>
+        <noscript class="loading">JavaScript を有効にしてください</noscript>
+    </div>
+
+    <div id="main">
+        <nav>
+            <div class="nav-wrapper light-blue">
+                <a href="https://djs-jpn.ga" class="brand-logo" id="djsjpn">DJS-JPN</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li>
+                        <a class="bladebutton">Blade</a>
+                    </li>
+                    <li>
+                        <a id="ncbutton">NightCrystal</a>
+                    </li>
+                    <li>
+                        <a class="dropdown" data-target="dwlang">言語
+                            <i class="material-icons right">arrow_drop_down</i>
+                        </a>
+
+                        <ul id='dwlang' class='dropdown-content'>
+                            <li>
+                                <a>日本語</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="section no-pad-bot" id="index-banner">
+            <div class="container">
+                <br>
+                <br>
+                <h1 class="header center">
+                    <p class="blue-text">DJS</p>-
+                    <p class="red-text">JPN</p>
+                </h1>
+                <div class="row center">
+                    <h5 class="header col s12 light">今の Discord ボットにはないものを目指して...</h5>
+                </div>
+                <div class="row center">
+                    <a class="btn-large waves-effect waves-light light-blue tooltipped link" onclick="window.open('https://djs-jpn.ga/beta')"
+                        class="tooltipped link" data-position="top" data-tooltip="https://djs-jpn.ga/beta">ホーム</a>
+                </div>
+                <br>
+                <br>
+            </div>
+        </div>
+
+        <div class="row cardjoin">
+                <div class="col s12 m6">
+                    <div class="card light-blue z-depth-5">
+                        <div class="card-content white-text">
+                            <span class="card-title">公式 Discord グループに参加（PR）</span>
+                            <p>以下の「参加」ボタンをクリックし、「招待を受け取る」をクリックすることで、 DJS-JPN の公式 Discord サーバーに参加することができます。</p>
+                        </div>
+                        <div class="card-action">
+                            <a onclick="window.open('https://discordapp.com/invite/DbTpjXV')" data-position="top" data-tooltip="https://discordapp.com/invite/DbTpjXV"
+                                class="white-text tooltipped link">参加</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <footer class="page-footer light-blue">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5>DJS-JPN</h5>
+                        <p class="white-text">今の Discord ボットにはないものを目指して...</p>
+                    </div>
+                    <div class="col l3 s12">
+                        <h5 class="white-text">リンク一覧</h5>
+                        <ul>
+                            <li>
+                                <a class="white-text tooltipped link" onclick="window.open('https://djs-jpn.ga/beta/bots')" data-position="top" data-tooltip="https://djs-jpn.ga/beta/bots">DJS-JPNが開発したボット</a>
+                            </li>
+                            <li>
+                                <a class="white-text tooltipped link" onclick="window.open('https://djs-jpn.ga/member')" data-position="top" data-tooltip="https://djs-jpn.ga/member">開発メンバー</a>
+                            </li>
+                            <li>
+                                <a class="white-text tooltipped link" onclick="window.open('https://djs-jpn.ga/make/step1')" data-position="top" data-tooltip="https://djs-jpn.ga/make/step1">Discord.jsを使ったボットの作成方法</a>
+                            </li>
+                            <li>
+                                <a class="white-text tooltipped link" onclick="window.open('https://djs-jpn.ga/help')" data-position="top" data-tooltip="https://djs-jpn.ga/help">ヘルプ</a>
+                            </li>
+                            <li>
+                                <a class="white-text tooltipped link" onclick="window.open('https://djs-jpn.ga')" data-position="top" data-tooltip="https://djs-jpn.ga">旧デザイン</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l3 s12">
+                        <h5 class="white-text tooltipped" data-position="left" data-tooltip="DJS-JPNと繋がろう">Connect</h5>
+                        <ul>
+                            <li>
+                                <a class="white-text tooltipped link" onclick="window.open('https://discordapp.com/invite/DbTpjXV')" data-position="top"
+                                    data-tooltip="https://discordapp.com/invite/DbTpjXV">公式 Discord グループ</a>
+                            </li>
+                            <li>
+                                <a class="white-text tooltipped link" onclick="window.open('https://plus.google.com/communities/102065506910522266374')"
+                                    data-position="top" data-tooltip="https://plus.google.com/communities/102065506910522266374">Google+</a>
+                            </li>
+                            <li>
+                                <a class="white-text tooltipped link" onclick="window.open('https://github.com/DJS-JPN')" data-position="top" data-tooltip="https://github.com/DJS-JPN">Github</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright light-blue darken-2">
+                <div class="container">
+                    Designed by NULL Code JP
+                </div>
+            </div>
+        </footer>
+
+        <div id="totop">
+            <a class="btn-floating btn-large waves-effect waves-light light-blue pulse tooltipped" data-position="left" data-tooltip="ページの一番上までスクロールします">
+                <i class="material-icons white-text">arrow_upward</i>
+            </a>
+        </div>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script type="text/javascript">
+        window.jQuery || function () {
+            document.getElementById("loading").innerText = "現在 Google のサーバーがダウンしているため、サイトにアクセスできません"
+        };
+        if (navigator.userAgent.toLowerCase().match(/chrome|firefox|opera/)) {
+            $(".loading").text("読み込み中...");
+        } else {
+            $(".loading").text("Chrome、Firefox、Operaでの閲覧をお勧めします");
+        }
+        $(window).on("load", function () {
+            $(".loading").fadeOut(1000);
+            setTimeout(function () {
+                $(".loading").text("読み込みが完了しました。");
+                $(".loading").fadeIn(1000);
+                setTimeout(function () {
+                    $(".preloader-background").fadeOut(500);
+                    $("#main").delay(500).fadeIn(500);
+                    $("title").text("DJS-JPN - 今の Discord ボットにはないものを目指して...");
+                    $("html").css("cursor", "auto")
+                }, 1000);
+            }, 1000);
+        });
+
+        $(".tooltipped").tooltip({
+            inDuration: 500,
+            outDuration: 500,
+        });
+
+        $(".dropdown").dropdown({
+            coverTrigger: false,
+            inDuration: 500,
+            outDuration: 500
+        });
+
+        $("#totop").click(function () {
+            $("body,html").animate({ scrollTop: 0 }, 500);
+            return false;
+        });
+
+        $("html").bind("contextmenu", function () { return false; });
+    </script>
+</body>
+
+</html>
