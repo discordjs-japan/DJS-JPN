@@ -232,7 +232,7 @@
                         <div class="col s12 m6">
                             <div class="card light-blue z-depth-5">
                                 <div class="card-content white-text">
-                                    <span class="card-title">公式 Discord グループに参加</span>
+                                    <span class="card-title">公式 Discord グループに参加（PR）</span>
                                     <p>以下の「参加」ボタンをクリックし、「招待を受け取る」をクリックすることで、 DJS-JPN の公式 Discord サーバーに参加することができます。</p>
                                 </div>
                                 <div class="card-action">
@@ -254,7 +254,7 @@
                                     <h5 class="white-text">リンク一覧</h5>
                                     <ul>
                                         <li>
-                                            <a class="white-text tooltipped link" onclick="window.open('https://djs-jpn.ga/bots')" data-position="top" data-tooltip="https://djs-jpn.ga/bots">DJS-JPNが開発したボット</a>
+                                            <a class="white-text tooltipped link" onclick="window.open('https://djs-jpn.ga/beta/bots')" data-position="top" data-tooltip="https://djs-jpn.ga/beta/bots">DJS-JPNが開発したボット</a>
                                         </li>
                                         <li>
                                             <a class="white-text tooltipped link" onclick="window.open('https://djs-jpn.ga/member')" data-position="top" data-tooltip="https://djs-jpn.ga/member">開発メンバー</a>
@@ -331,15 +331,17 @@
                 }, 1000);
             }, 1000);
         });
+
         $(".tooltipped").tooltip({
             inDuration: 500,
             outDuration: 500,
         });
-        $(".dropdown").dropdown();
 
-        $('.carousel.carousel-slider').carousel();
-
-        M.Dropdown.init($(".dropdown"), { coverTrigger: false, inDuration: 500, outDuration: 500 });
+        $(".dropdown").dropdown({
+            coverTrigger: false,
+            inDuration: 500,
+            outDuration: 500
+        });
 
         $("#totop").click(function () {
             $("body,html").animate({ scrollTop: 0 }, 500);
