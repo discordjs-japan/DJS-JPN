@@ -20,7 +20,7 @@ Prefix="./"
 Language="ja_jp"
 WelcomeChannel="disable"
 RestartDelay="600000"
-DocomoAPIKEY=""
+DocomoAPIKEY="disable"
 ```
 [DocomoAPI](https://dev.smt.docomo.ne.jp/?p=docs.api.page&api_name=dialogue&p_name=api_1)
 
