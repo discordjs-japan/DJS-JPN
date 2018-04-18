@@ -254,19 +254,24 @@
                                     <h5 class="white-text">リンク一覧</h5>
                                     <ul>
                                         <li>
-                                            <a class="white-text tooltipped link" onclick="window.open('https://djs-jpn.ga/beta/bots')" data-position="top" data-tooltip="https://djs-jpn.ga/beta/bots">DJS-JPNが開発したボット</a>
+                                            <a class="white-text tooltipped link modal-trigger" data-target="linkwarn" onclick="setlink('https://djs-jpn.ga/beta/bots');"
+                                                data-position="top" data-tooltip="https://djs-jpn.ga/beta/bots">DJS-JPNが開発したボット</a>
                                         </li>
                                         <li>
-                                            <a class="white-text tooltipped link" onclick="window.open('https://djs-jpn.ga/member')" data-position="top" data-tooltip="https://djs-jpn.ga/member">開発メンバー</a>
+                                            <a class="white-text tooltipped link modal-trigger" data-target="linkwarn" onclick="setlink('https://djs-jpn.ga/beta/member');"
+                                                data-position="top" data-tooltip="https://djs-jpn.ga/beta/member">開発メンバー</a>
                                         </li>
                                         <li>
-                                            <a class="white-text tooltipped link" onclick="window.open('https://djs-jpn.ga/make/step1')" data-position="top" data-tooltip="https://djs-jpn.ga/make/step1">Discord.jsを使ったボットの作成方法</a>
+                                            <a class="white-text tooltipped link modal-trigger" data-target="linkwarn" onclick="setlink('https://djs-jpn.ga/beta/make/step1');"
+                                                data-position="top" data-tooltip="https://djs-jpn.ga/beta/make/step1">Discord.jsを使ったボットの作成方法</a>
                                         </li>
                                         <li>
-                                            <a class="white-text tooltipped link" onclick="window.open('https://djs-jpn.ga/help')" data-position="top" data-tooltip="https://djs-jpn.ga/help">ヘルプ</a>
+                                            <a class="white-text tooltipped link modal-trigger" data-target="linkwarn" onclick="setlink('https://djs-jpn.ga/beta/help');"
+                                                data-position="top" data-tooltip="https://djs-jpn.ga/beta/help">ヘルプ</a>
                                         </li>
                                         <li>
-                                            <a class="white-text tooltipped link" onclick="window.open('https://djs-jpn.ga')" data-position="top" data-tooltip="https://djs-jpn.ga">旧デザイン</a>
+                                            <a class="white-text tooltipped link modal-trigger" data-target="linkwarn" onclick="setlink('https://djs-jpn.ga');" data-position="top"
+                                                data-tooltip="https://djs-jpn.ga">旧デザイン</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -274,20 +279,22 @@
                                     <h5 class="white-text tooltipped" data-position="left" data-tooltip="DJS-JPNと繋がろう">Connect</h5>
                                     <ul>
                                         <li>
-                                            <a class="white-text tooltipped link" onclick="window.open('https://discordapp.com/invite/DbTpjXV')" data-position="top"
-                                                data-tooltip="https://discordapp.com/invite/DbTpjXV">公式 Discord グループ</a>
+                                            <a class="white-text tooltipped link modal-trigger" data-target="linkwarn" onclick="setlink('https://discordapp.com/invite/DbTpjXV');"
+                                                data-position="top" data-tooltip="https://discordapp.com/invite/DbTpjXV">公式 Discord グループ</a>
                                         </li>
                                         <li>
-                                            <a class="white-text tooltipped link" onclick="window.open('https://plus.google.com/communities/102065506910522266374')"
+                                            <a class="white-text tooltipped link modal-trigger" data-target="linkwarn" onclick="setlink('https://plus.google.com/communities/102065506910522266374');"
                                                 data-position="top" data-tooltip="https://plus.google.com/communities/102065506910522266374">Google+</a>
                                         </li>
                                         <li>
-                                            <a class="white-text tooltipped link" onclick="window.open('https://github.com/DJS-JPN')" data-position="top" data-tooltip="https://github.com/DJS-JPN">Github</a>
+                                            <a class="white-text tooltipped link modal-trigger" data-target="linkwarn" onclick="setlink('https://github.com/DJS-JPN');"
+                                                data-position="top" data-tooltip="https://github.com/DJS-JPN">Github</a>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
+
                         <div class="footer-copyright light-blue darken-2">
                             <div class="container">
                                 Designed by NULL Code JP
@@ -301,6 +308,17 @@
                         </a>
                     </div>
 
+                    <div id="linkwarn" class="modal">
+                        <div class="modal-content">
+                            <h4>警告</h4>
+                            <p id="warnmsg"></p>
+                        </div>
+                        <div class="modal-footer">
+                            <a class="modal-action modal-close waves-effect waves-red btn-flat link">いいえ</a>
+                            <a onclick="window.open(link)" class="modal-action waves-effect waves-green btn-flat link">はい</a>
+                        </div>
+                    </div>
+
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
@@ -308,15 +326,19 @@
         window.jQuery || function () {
             document.getElementById("loading").innerText = "現在 Google のサーバーがダウンしているため、サイトにアクセスできません"
         };
+
+        var link = "";
+
         if (navigator.userAgent.toLowerCase().match(/chrome|firefox|opera/)) {
             $(".loading").text("読み込み中...");
         } else {
             $(".loading").text("Chrome、Firefox、Operaでの閲覧をお勧めします");
         }
+
         $(window).on("load", function () {
             $(".loading").fadeOut(1000);
             setTimeout(function () {
-                $(".loading").text("読み込みが完了しました。");
+                $(".loading").text("読み込みが完了しました");
                 $(".loading").fadeIn(1000);
                 setTimeout(function () {
                     $(".preloader-background").fadeOut(500);
@@ -343,6 +365,12 @@
             outDuration: 500
         });
 
+        $(".modal").modal({
+            inDuration: 500,
+            outDuration: 500,
+            dismissible: false
+        });
+
         $("#totop").click(function () {
             $("body,html").animate({ scrollTop: 0 }, 500);
             return false;
@@ -364,6 +392,15 @@
         });
 
         $("html").bind("contextmenu", function () { return false; });
+
+        function setlink(l) {
+            link = l;
+            if (l.slice(0, 18) == "https://djs-jpn.ga") {
+                $("#warnmsg").text("外部ページ " + l + " へとジャンプします。外部ページへジャンプしてもよろしいでしょうか？（リンクは新しいタブで開かれます。）");
+            } else {
+                $("#warnmsg").text("外部サイト " + l + " へとジャンプします。外部サイトへジャンプしてもよろしいでしょうか？（リンクは新しいタブで開かれます。）");
+            }
+        }
     </script>
 </body>
 
