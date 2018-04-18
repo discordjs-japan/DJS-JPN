@@ -211,7 +211,7 @@
                 <br>
                 <br>最近では、メンバー合同で、
                 <a class="tooltipped link modal-trigger" data-target="linkwarn" onclick="setlink('https://djs-jpn.ga/bots/blade');" data-position="top"
-                    data-tooltip="https://djs-jpn.ga/bots/blade">Blade</a> という多機能 Discord ボットを開発しています。
+                    data-tooltip="https://djs-jpn.ga/bots/blade">Blade (旧 Micro)</a> という多機能 Discord ボットを開発しています。
                 <br>
                 <br>
                 <a onclick="window.open('https://djs-jpn.ga/bots')" class="tooltipped link" data-position="top" data-tooltip="https://djs-jpn.ga/bots">こちら</a>から DJS-JPN が開発したボットの確認ができますので、是非ご覧ください。
@@ -398,9 +398,9 @@
         function setlink(l) {
             link = l;
             if (l.slice(0, 18) == "https://djs-jpn.ga") {
-                $("#warnmsg").text("外部ページ " + l + " へとジャンプします。外部ページへジャンプしてもよろしいでしょうか？（リンクは新しいタブで開かれます。）");
+                $("#warnmsg").text("外部ページ " + l + " へとジャンプします。外部ページへとジャンプしてもよろしいでしょうか？（リンクは新しいタブで開かれます）");
             } else {
-                $("#warnmsg").text("外部サイト " + l + " へとジャンプします。外部サイトへジャンプしてもよろしいでしょうか？（リンクは新しいタブで開かれます。）");
+                $("#warnmsg").text("外部サイト " + l + " へとジャンプします。外部サイトへとジャンプしてもよろしいでしょうか？（リンクは新しいタブで開かれます）");
             }
         }
     </script>
