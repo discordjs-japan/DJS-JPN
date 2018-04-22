@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="https://djs-jpn.ga/beta/cdn/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Loading</title>
 
@@ -52,10 +52,17 @@
             padding-top: 120px;
         }
 
-        .senn {
-            padding: .25em 0 .5em .75em;
-            border-left: 6px solid #03a9f4;
-            border-bottom: 1px solid #03a9f4;
+        .g-recaptcha {
+            display: flex;
+            position: fixed;
+            align-items: center;
+            justify-content: center;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            font-size: 150%;
+            padding-top: 250px;
         }
 
         #totop {
@@ -94,6 +101,17 @@
             cursor: pointer;
         }
     </style>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110851013-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag("js", new Date());
+
+        gtag("config", "UA-110851013-2");
+    </script>
+
 </head>
 
 <body>
@@ -292,33 +310,123 @@
         </div>
 
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="https://djs-jpn.ga/beta/cdn/js/jquery-3.3.1.min.js"></script>
+    <script src="https://djs-jpn.ga/beta/cdn/js/materialize.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
     <script type="text/javascript">
-        window.jQuery || function () {
-            document.getElementById("loading").innerText = "現在 Google のサーバーがダウンしているため、サイトにアクセスできません"
-        };
+        window.jQuery || alert("読み込みに失敗しました");
 
         var link = "";
+
+        var NhCRHtBnbWbgjJMDBbFbpxryZhKmPXlk = "UIGDSYsQkInaNpPMsStIwUamGovIuglg";
+
+        var TjtQpaxCeASruFDdTWrdKxxQYZBesdrp = "";
+
+        $(".g-recaptcha").fadeOut(0);
+
+        function getproxstats() {
+            $.get("https://jsonip.com", function (r) {
+                TjtQpaxCeASruFDdTWrdKxxQYZBesdrp = r.ip;
+                $.get("https://proxycheck.io/v2/" + TjtQpaxCeASruFDdTWrdKxxQYZBesdrp, { vpn: 1 }, function (r) {
+                    if (r.status == "ok") {
+                        NhCRHtBnbWbgjJMDBbFbpxryZhKmPXlk = r[TjtQpaxCeASruFDdTWrdKxxQYZBesdrp].proxy;
+                    }
+                });
+            });
+        }
+
+        getproxstats();
 
         if (navigator.userAgent.toLowerCase().match(/chrome|firefox|opera/)) {
             $(".loading").text("読み込み中...");
         } else {
             $(".loading").text("Chrome、Firefox、Operaでの閲覧をお勧めします");
         }
+
         $(window).on("load", function () {
+            load();
+        });
+
+        function load() {
             $(".loading").fadeOut(1000);
             setTimeout(function () {
-                $(".loading").text("読み込みが完了しました");
-                $(".loading").fadeIn(1000);
-                setTimeout(function () {
-                    $(".preloader-background").fadeOut(500);
-                    $("#main").delay(500).fadeIn(500);
-                    $("title").text("DJS-JPN - 今の Discord ボットにはないものを目指して...");
-                    $("html").css("cursor", "auto")
-                }, 1000);
+                if (NhCRHtBnbWbgjJMDBbFbpxryZhKmPXlk != "UIGDSYsQkInaNpPMsStIwUamGovIuglg") {
+                    if (NhCRHtBnbWbgjJMDBbFbpxryZhKmPXlk == "yes") {
+                        $(".loading").text("プロキシが検出されました");
+                        $(".loading").fadeIn(1000);
+                        $(".g-recaptcha").fadeIn(1000);
+                    } else {
+                        $(".loading").text("読み込みが完了しました");
+                        $(".loading").fadeIn(1000);
+                        setTimeout(function () {
+                            $(".preloader-background").fadeOut(500);
+                            $("#main").delay(500).fadeIn(500);
+                            $("title").text("DJS-JPN - 今の Discord ボットにはないものを目指して...");
+                            $("html").css("cursor", "auto")
+                            setTimeout(function () {
+                                M.toast({ html: "DJS-JPN 公式サイトへようこそ！" });
+                            }, 1000);
+                        }, 1000);
+                    }
+                } else {
+                    $(".loading").text("読み込みに失敗しました");
+                    $(".loading").fadeIn(1000);
+                    setTimeout(function () {
+                        $(".loading").fadeOut(1000);
+                        setTimeout(function () {
+                            if (navigator.userAgent.toLowerCase().match(/chrome|firefox|opera/)) {
+                                $(".loading").text("読み込み中...");
+                            } else {
+                                $(".loading").text("Chrome、Firefox、Operaでの閲覧をお勧めします");
+                            }
+                            $(".loading").fadeIn(1000);
+                            setTimeout(function () {
+                                getproxstats();
+                                load();
+                            }, 1000);
+                        }, 1000);
+                    }, 2000);
+                }
             }, 1000);
-        });
+        }
+
+        function khORyggZxvYitoQSPajRPidrNctAfVmI(c) {
+            if (c) {
+                if (c.length >= 526) {
+                    $(".loading").fadeOut(1000);
+                    $(".g-recaptcha").fadeOut(1000);
+                    setTimeout(function () {
+                        $(".loading").text("読み込みが完了しました");
+                        $(".loading").fadeIn(1000);
+                        setTimeout(function () {
+                            $(".preloader-background").fadeOut(500);
+                            $("#main").delay(500).fadeIn(500);
+                            $("title").text("DJS-JPN - 今の Discord ボットにはないものを目指して...");
+                            $("html").css("cursor", "auto")
+                            setTimeout(function () {
+                                M.toast({ html: "DJS-JPN 公式サイトへようこそ！" });
+                                M.toast({ html: "この通知は時間経過で自動で閉じられます" });
+                                M.toast({ html: "もし邪魔な場合はスライドで消すこともできます" });
+                            }, 1000);
+                        }, 1000);
+                    }, 1000);
+                } else {
+                    $(".loading").fadeOut(1000);
+                    $(".g-recaptcha").fadeOut(1000);
+                    setTimeout(function () {
+                        $(".loading").text("不正なアクセスが検出されました");
+                        $(".loading").fadeIn(1000);
+                    }, 1000);
+                }
+            } else {
+                $(".loading").fadeOut(1000);
+                $(".g-recaptcha").fadeOut(1000);
+                setTimeout(function () {
+                    $(".loading").text("不正なアクセスが検出されました");
+                    $(".loading").fadeIn(1000);
+                }, 1000);
+            }
+        }
 
         $(".tooltipped").tooltip({
             inDuration: 500,
