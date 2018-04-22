@@ -356,7 +356,7 @@
     </div>
     <script src="https://djs-jpn.ga/beta/cdn/js/jquery-3.3.1.min.js"></script>
     <script src="https://djs-jpn.ga/beta/cdn/js/materialize.min.js"></script>
-    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <script type="text/javascript">
         window.jQuery || alert("読み込みに失敗しました");
 
@@ -375,11 +375,10 @@
                     if (r.status == "ok") {
                         NhCRHtBnbWbgjJMDBbFbpxryZhKmPXlk = r[TjtQpaxCeASruFDdTWrdKxxQYZBesdrp].proxy;
                     }
+                    load();
                 });
             });
         }
-
-        getproxstats();
 
         if (navigator.userAgent.toLowerCase().match(/chrome|firefox|opera/)) {
             $(".loading").text("読み込み中...");
@@ -388,7 +387,7 @@
         }
 
         $(window).on("load", function () {
-            load();
+            getproxstats();
         });
 
         function load() {
@@ -428,7 +427,6 @@
                             $(".loading").fadeIn(1000);
                             setTimeout(function () {
                                 getproxstats();
-                                load();
                             }, 1000);
                         }, 1000);
                     }, 2000);
