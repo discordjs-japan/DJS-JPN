@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="https://djs-jpn.ga/beta/cdn/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Loading</title>
 
@@ -209,7 +209,8 @@
                 <br>
                 <br>
                 <h1 class="header center">
-                    <p class="blue-text">DJS</p>-<p class="red-text">JPN</p>
+                    <p class="blue-text">DJS</p>-
+                    <p class="red-text">JPN</p>
                 </h1>
                 <div class="row center">
                     <h5 class="header col s12 light">今の Discord ボットにはないものを目指して...</h5>
@@ -353,11 +354,11 @@
         </div>
 
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="https://djs-jpn.ga/beta/cdn/js/jquery-3.3.1.min.js"></script>
+    <script src="https://djs-jpn.ga/beta/cdn/js/materialize.min.js"></script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
     <script type="text/javascript">
-        window.jQuery || alert("現在 Google のサーバーがダウンしているため、サイトにアクセスできません");
+        window.jQuery || alert("読み込みに失敗しました");
 
         var link = "";
 
@@ -367,14 +368,18 @@
 
         $(".g-recaptcha").fadeOut(0);
 
-        $.get("https://jsonip.com", function (r) {
-            TjtQpaxCeASruFDdTWrdKxxQYZBesdrp = r.ip;
-            $.get("https://proxycheck.io/v2/" + TjtQpaxCeASruFDdTWrdKxxQYZBesdrp, { vpn: 1 }, function (r) {
-                if (r.status == "ok") {
-                    NhCRHtBnbWbgjJMDBbFbpxryZhKmPXlk = r[TjtQpaxCeASruFDdTWrdKxxQYZBesdrp].proxy;
-                }
+        function getproxstats() {
+            $.get("https://jsonip.com", function (r) {
+                TjtQpaxCeASruFDdTWrdKxxQYZBesdrp = r.ip;
+                $.get("https://proxycheck.io/v2/" + TjtQpaxCeASruFDdTWrdKxxQYZBesdrp, { vpn: 1 }, function (r) {
+                    if (r.status == "ok") {
+                        NhCRHtBnbWbgjJMDBbFbpxryZhKmPXlk = r[TjtQpaxCeASruFDdTWrdKxxQYZBesdrp].proxy;
+                    }
+                });
             });
-        });
+        }
+
+        getproxstats();
 
         if (navigator.userAgent.toLowerCase().match(/chrome|firefox|opera/)) {
             $(".loading").text("読み込み中...");
@@ -383,6 +388,10 @@
         }
 
         $(window).on("load", function () {
+            load();
+        });
+
+        function load() {
             $(".loading").fadeOut(1000);
             setTimeout(function () {
                 if (NhCRHtBnbWbgjJMDBbFbpxryZhKmPXlk != "UIGDSYsQkInaNpPMsStIwUamGovIuglg") {
@@ -408,9 +417,24 @@
                 } else {
                     $(".loading").text("読み込みに失敗しました");
                     $(".loading").fadeIn(1000);
+                    setTimeout(function () {
+                        $(".loading").fadeOut(1000);
+                        setTimeout(function () {
+                            if (navigator.userAgent.toLowerCase().match(/chrome|firefox|opera/)) {
+                                $(".loading").text("読み込み中...");
+                            } else {
+                                $(".loading").text("Chrome、Firefox、Operaでの閲覧をお勧めします");
+                            }
+                            $(".loading").fadeIn(1000);
+                            setTimeout(function () {
+                                getproxstats();
+                                load();
+                            }, 1000);
+                        }, 1000);
+                    }, 2000);
                 }
             }, 1000);
-        });
+        }
 
         function khORyggZxvYitoQSPajRPidrNctAfVmI(c) {
             if (c) {
