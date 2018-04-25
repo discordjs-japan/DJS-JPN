@@ -1,463 +1,329 @@
 <html>
 
-<head>
-    <link rel="stylesheet" href="https://djs-jpn.ga/beta/cdn/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Loading</title>
+    <head>
+        <link rel="stylesheet" href="https://djs-jpn.ga/beta/cdn/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <title>Loading</title>
 
-    <style>
-        @font-face {
-            font-family: "rounded-mgenplus-1p-light";
-            src: local("rounded-mgenplus-1p-light"), url("./font/rounded-mgenplus-1p-light.ttf") format("truetype");
-            font-display: swap;
-        }
+        <style>
+            @font-face {
+                font-family: "rounded-mgenplus-1p-light";
+                src: local("rounded-mgenplus-1p-light"), url("./font/rounded-mgenplus-1p-light.ttf") format("truetype");
+                font-display: swap;
+            }
 
-        html {
-            overflow-y: scroll;
-            font-family: "rounded-mgenplus-1p-light", cursive;
-            -webkit-user-select: none;
-            user-select: none;
-            cursor: wait;
-        }
+            html {
+                overflow-y: scroll;
+                font-family: "rounded-mgenplus-1p-light", cursive;
+                -webkit-user-select: none;
+                user-select: none;
+                cursor: wait;
+            }
 
-        p {
-            display: inline;
-        }
+            p {
+                display: inline;
+            }
 
-        .preloader-background {
-            display: flex;
-            position: fixed;
-            align-items: center;
-            justify-content: center;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-        }
+            .preloader-background {
+                display: flex;
+                position: fixed;
+                align-items: center;
+                justify-content: center;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+            }
 
-        .preloader-wrapper {
-            position: fixed;
-        }
+            .preloader-wrapper {
+                position: fixed;
+            }
 
-        .loading {
-            display: flex;
-            position: fixed;
-            align-items: center;
-            justify-content: center;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            font-size: 150%;
-            padding-top: 120px;
-        }
+            .loading {
+                display: flex;
+                position: fixed;
+                align-items: center;
+                justify-content: center;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                font-size: 150%;
+                padding-top: 120px;
+            }
 
-        .g-recaptcha {
-            display: flex;
-            position: fixed;
-            align-items: center;
-            justify-content: center;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            font-size: 150%;
-            padding-top: 250px;
-        }
+            .g-recaptcha {
+                display: flex;
+                position: fixed;
+                align-items: center;
+                justify-content: center;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                font-size: 150%;
+                padding-top: 250px;
+            }
 
-        #totop {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-        }
+            .continue {
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin-top: 230px;
+            }
 
-        #totop a {
-            text-decoration: none;
-            text-align: center;
-            display: block;
-        }
+            #totop {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+            }
 
-        #totop a:hover {
-            text-decoration: none;
-        }
+            #totop a {
+                text-decoration: none;
+                text-align: center;
+                display: block;
+            }
 
-        #totop a:hover {
-            text-decoration: none;
-        }
+            #totop a:hover {
+                text-decoration: none;
+            }
 
-        h6 {
-            padding-left: 20px;
-        }
+            #totop a:hover {
+                text-decoration: none;
+            }
 
-        #djsjpn {
-            padding-left: 30px;
-        }
+            h6 {
+                padding-left: 20px;
+            }
 
-        #main {
-            display: none;
-        }
+            #djsjpn {
+                padding-left: 30px;
+            }
 
-        .link {
-            cursor: pointer;
-        }
-    </style>
+            #main {
+                display: none;
+            }
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110851013-2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag("js", new Date());
+            .link {
+                cursor: pointer;
+            }
+        </style>
 
-        gtag("config", "UA-110851013-2");
-    </script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110851013-2"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag("js", new Date());
 
-</head>
+            gtag("config", "UA-110851013-2");
+        </script>
 
-<body>
+    </head>
 
-    <div class="preloader-background">
-        <div class="preloader-wrapper big active">
-            <div class="spinner-layer spinner-blue">
-                <div class="circle-clipper left">
-                    <div class="circle"></div>
+    <body>
+
+        <div class="preloader-background">
+            <div class="preloader-wrapper big active">
+                <div class="spinner-layer spinner-blue">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
                 </div>
-                <div class="gap-patch">
-                    <div class="circle"></div>
+
+                <div class="spinner-layer spinner-red">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
                 </div>
-                <div class="circle-clipper right">
-                    <div class="circle"></div>
+
+                <div class="spinner-layer spinner-yellow">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+
+                <div class="spinner-layer spinner-green">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
                 </div>
             </div>
-
-            <div class="spinner-layer spinner-red">
-                <div class="circle-clipper left">
-                    <div class="circle"></div>
-                </div>
-                <div class="gap-patch">
-                    <div class="circle"></div>
-                </div>
-                <div class="circle-clipper right">
-                    <div class="circle"></div>
-                </div>
-            </div>
-
-            <div class="spinner-layer spinner-yellow">
-                <div class="circle-clipper left">
-                    <div class="circle"></div>
-                </div>
-                <div class="gap-patch">
-                    <div class="circle"></div>
-                </div>
-                <div class="circle-clipper right">
-                    <div class="circle"></div>
-                </div>
-            </div>
-
-            <div class="spinner-layer spinner-green">
-                <div class="circle-clipper left">
-                    <div class="circle"></div>
-                </div>
-                <div class="gap-patch">
-                    <div class="circle"></div>
-                </div>
-                <div class="circle-clipper right">
-                    <div class="circle"></div>
-                </div>
-            </div>
-        </div>
-        <h6 class="loading"></h6>
-        <noscript class="loading">JavaScript を有効にしてください</noscript>
-        <div class="g-recaptcha" data-sitekey="6LftelQUAAAAAIwWMWko5p7NRJAKEAisVXS2buRA" data-callback="khORyggZxvYitoQSPajRPidrNctAfVmI"></div>
-    </div>
-
-    <div id="main">
-        <nav>
-            <div class="nav-wrapper light-blue">
-                <a href="https://djs-jpn.ga" class="brand-logo" id="djsjpn">DJS-JPN</a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li>
-                        <a class="bladebutton">ボット一覧</a>
-                    </li>
-                    <li>
-                        <a class="bladebutton">Blade</a>
-                    </li>
-                    <li>
-                        <a id="ncbutton">NightCrystal</a>
-                    </li>
-                    <li>
-                        <a class="dropdown" data-target="dwlang">言語
-                            <i class="material-icons right">arrow_drop_down</i>
-                        </a>
-
-                        <ul id='dwlang' class='dropdown-content'>
-                            <li>
-                                <a>日本語</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-        <div class="section no-pad-bot" id="index-banner">
-            <div class="container">
-                <br>
-                <br>
-                <h1 class="header center">
-                    <p class="blue-text">DJS</p>-<p class="red-text">JPN</p>
-                </h1>
-                <div class="row center">
-                    <h5 class="header col s12 light">今の Discord ボットにはないものを目指して...</h5>
-                </div>
-                <div class="row center">
-                    <a class="btn-large waves-effect waves-light light-blue tooltipped link" onclick="window.open('https://djs-jpn.ga/beta')"
-                        class="tooltipped link" data-position="top" data-tooltip="https://djs-jpn.ga/beta">ホーム</a>
-                </div>
-                <br>
-                <br>
-            </div>
+            <h6 class="loading"></h6>
+            <noscript class="loading">JavaScript を有効にしてください</noscript>
+            <div style="visibility: hidden;" class="g-recaptcha" data-sitekey="6LftelQUAAAAAIwWMWko5p7NRJAKEAisVXS2buRA" data-callback="khORyggZxvYitoQSPajRPidrNctAfVmI"></div>
+            <a style="visibility: hidden;" class="btn-large waves-effect waves-light light-blue whatbutton z-depth-5 continue disabled">3</a>
         </div>
 
-        <div class="row cardjoin">
-            <div class="col s12 m6">
-                <div class="card light-blue z-depth-5">
-                    <div class="card-content white-text">
-                        <span class="card-title">公式 Discord グループに参加（PR）</span>
-                        <p>以下の「参加」ボタンをクリックし、「招待を受け取る」をクリックすることで、 DJS-JPN の公式 Discord サーバーに参加することができます。</p>
-                    </div>
-                    <div class="card-action">
-                        <a class="white-text tooltipped link modal-trigger" data-target="linkwarn" onclick="setlink('https://discordapp.com/invite/DbTpjXV');"
-                            data-position="top" data-tooltip="https://discordapp.com/invite/DbTpjXV">参加</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div id="main">
+            <nav>
+                <div class="nav-wrapper light-blue">
+                    <a href="https://djs-jpn.ga" class="brand-logo" id="djsjpn">DJS-JPN</a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li>
+                            <a class="bladebutton">ボット一覧</a>
+                        </li>
+                        <li>
+                            <a class="bladebutton">Blade</a>
+                        </li>
+                        <li>
+                            <a id="ncbutton">NightCrystal</a>
+                        </li>
+                        <li>
+                            <a class="dropdown" data-target="dwlang">言語
+                                <i class="material-icons right">arrow_drop_down</i>
+                            </a>
 
-        <footer class="page-footer light-blue">
-            <div class="container">
-                <div class="row">
-                    <div class="col l6 s12">
-                        <h5>DJS-JPN</h5>
-                        <p class="white-text">今の Discord ボットにはないものを目指して...</p>
-                    </div>
-                    <div class="col l3 s12">
-                        <h5 class="white-text">リンク一覧</h5>
-                        <ul>
-                            <li>
-                                <a class="white-text tooltipped link modal-trigger" data-target="linkwarn" onclick="setlink('https://djs-jpn.ga/beta/bots');"
-                                    data-position="top" data-tooltip="https://djs-jpn.ga/beta/bots">DJS-JPNが開発したボット</a>
-                            </li>
-                            <li>
-                                <a class="white-text tooltipped link modal-trigger" data-target="linkwarn" onclick="setlink('https://djs-jpn.ga/beta/member');"
-                                    data-position="top" data-tooltip="https://djs-jpn.ga/beta/member">開発メンバー</a>
-                            </li>
-                            <li>
-                                <a class="white-text tooltipped link modal-trigger" data-target="linkwarn" onclick="setlink('https://djs-jpn.ga/beta/make/step1');"
-                                    data-position="top" data-tooltip="https://djs-jpn.ga/beta/make/step1">Discord.jsを使ったボットの作成方法</a>
-                            </li>
-                            <li>
-                                <a class="white-text tooltipped link modal-trigger" data-target="linkwarn" onclick="setlink('https://djs-jpn.ga/beta/help');"
-                                    data-position="top" data-tooltip="https://djs-jpn.ga/beta/help">ヘルプ</a>
-                            </li>
-                            <li>
-                                <a class="white-text tooltipped link modal-trigger" data-target="linkwarn" onclick="setlink('https://djs-jpn.ga');" data-position="top"
-                                    data-tooltip="https://djs-jpn.ga">旧デザイン</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col l3 s12">
-                        <h5 class="white-text tooltipped" data-position="left" data-tooltip="DJS-JPNと繋がろう">Connect</h5>
-                        <ul>
-                            <li>
-                                <a class="white-text tooltipped link modal-trigger" data-target="linkwarn" onclick="setlink('https://discordapp.com/invite/DbTpjXV');"
-                                    data-position="top" data-tooltip="https://discordapp.com/invite/DbTpjXV">公式 Discord グループ</a>
-                            </li>
-                            <li>
-                                <a class="white-text tooltipped link modal-trigger" data-target="linkwarn" onclick="setlink('https://plus.google.com/communities/102065506910522266374');"
-                                    data-position="top" data-tooltip="https://plus.google.com/communities/102065506910522266374">Google+</a>
-                            </li>
-                            <li>
-                                <a class="white-text tooltipped link modal-trigger" data-target="linkwarn" onclick="setlink('https://github.com/DJS-JPN');"
-                                    data-position="top" data-tooltip="https://github.com/DJS-JPN">Github</a>
-                            </li>
-                        </ul>
-                    </div>
+                            <ul id='dwlang' class='dropdown-content'>
+                                <li>
+                                    <a>日本語</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
-            </div>
+            </nav>
 
-            <div class="footer-copyright light-blue darken-2">
+            <div class="section no-pad-bot" id="index-banner">
                 <div class="container">
-                    Designed by NULL Code JP
+                    <br>
+                    <br>
+                    <h1 class="header center">
+                        <p class="blue-text">DJS</p>-<p class="red-text">JPN</p>
+                    </h1>
+                    <div class="row center">
+                        <h5 class="header col s12 light">今の Discord ボットにはないものを目指して...</h5>
+                    </div>
+                    <div class="row center">
+                        <a class="btn-large waves-effect waves-light light-blue tooltipped link" onclick="window.open('https://djs-jpn.ga/beta')"
+                            class="tooltipped link" data-position="top" data-tooltip="https://djs-jpn.ga/beta">ホーム</a>
+                    </div>
+                    <br>
+                    <br>
                 </div>
             </div>
-        </footer>
 
-        <div id="totop">
-            <a class="btn-floating btn-large waves-effect waves-light light-blue pulse tooltipped" data-position="left" data-tooltip="ページの一番上までスクロールします">
-                <i class="material-icons white-text">arrow_upward</i>
-            </a>
-        </div>
-
-        <div id="linkwarn" class="modal">
-            <div class="modal-content">
-                <h4>警告</h4>
-                <p id="warnmsg"></p>
+            <div class="row cardjoin">
+                <div class="col s12 m6">
+                    <div class="card light-blue z-depth-5">
+                        <div class="card-content white-text">
+                            <span class="card-title">公式 Discord グループに参加（PR）</span>
+                            <p>以下の「参加」ボタンをクリックし、「招待を受け取る」をクリックすることで、 DJS-JPN の公式 Discord サーバーに参加することができます。</p>
+                        </div>
+                        <div class="card-action">
+                            <a class="white-text tooltipped link modal-trigger" data-target="linkwarn" onclick="setlink('https://discordapp.com/invite/DbTpjXV');"
+                                data-position="top" data-tooltip="https://discordapp.com/invite/DbTpjXV">参加</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="modal-footer">
-                <a class="modal-action modal-close waves-effect waves-red btn-flat link">いいえ</a>
-                <a onclick="window.open(link)" class="modal-action waves-effect waves-green btn-flat link">はい</a>
+
+            <footer class="page-footer light-blue">
+                <div class="container">
+                    <div class="row">
+                        <div class="col l6 s12">
+                            <h5>DJS-JPN</h5>
+                            <p class="white-text">今の Discord ボットにはないものを目指して...</p>
+                        </div>
+                        <div class="col l3 s12">
+                            <h5 class="white-text">リンク一覧</h5>
+                            <ul>
+                                <li>
+                                    <a class="white-text tooltipped link modal-trigger" data-target="linkwarn" onclick="setlink('https://djs-jpn.ga/beta/bots');"
+                                        data-position="top" data-tooltip="https://djs-jpn.ga/beta/bots">DJS-JPNが開発したボット</a>
+                                </li>
+                                <li>
+                                    <a class="white-text tooltipped link modal-trigger" data-target="linkwarn" onclick="setlink('https://djs-jpn.ga/beta/member');"
+                                        data-position="top" data-tooltip="https://djs-jpn.ga/beta/member">開発メンバー</a>
+                                </li>
+                                <li>
+                                    <a class="white-text tooltipped link modal-trigger" data-target="linkwarn" onclick="setlink('https://djs-jpn.ga/beta/make/step1');"
+                                        data-position="top" data-tooltip="https://djs-jpn.ga/beta/make/step1">Discord.jsを使ったボットの作成方法</a>
+                                </li>
+                                <li>
+                                    <a class="white-text tooltipped link modal-trigger" data-target="linkwarn" onclick="setlink('https://djs-jpn.ga/beta/help');"
+                                        data-position="top" data-tooltip="https://djs-jpn.ga/beta/help">ヘルプ</a>
+                                </li>
+                                <li>
+                                    <a class="white-text tooltipped link modal-trigger" data-target="linkwarn" onclick="setlink('https://djs-jpn.ga');" data-position="top"
+                                        data-tooltip="https://djs-jpn.ga">旧デザイン</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col l3 s12">
+                            <h5 class="white-text tooltipped" data-position="left" data-tooltip="DJS-JPNと繋がろう">Connect</h5>
+                            <ul>
+                                <li>
+                                    <a class="white-text tooltipped link modal-trigger" data-target="linkwarn" onclick="setlink('https://discordapp.com/invite/DbTpjXV');"
+                                        data-position="top" data-tooltip="https://discordapp.com/invite/DbTpjXV">公式 Discord グループ</a>
+                                </li>
+                                <li>
+                                    <a class="white-text tooltipped link modal-trigger" data-target="linkwarn" onclick="setlink('https://plus.google.com/communities/102065506910522266374');"
+                                        data-position="top" data-tooltip="https://plus.google.com/communities/102065506910522266374">Google+</a>
+                                </li>
+                                <li>
+                                    <a class="white-text tooltipped link modal-trigger" data-target="linkwarn" onclick="setlink('https://github.com/DJS-JPN');"
+                                        data-position="top" data-tooltip="https://github.com/DJS-JPN">Github</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-copyright light-blue darken-2">
+                    <div class="container">
+                        Designed by NULL Code JP
+                    </div>
+                </div>
+            </footer>
+
+            <div id="totop">
+                <a class="btn-floating btn-large waves-effect waves-light light-blue pulse tooltipped" data-position="left" data-tooltip="ページの一番上までスクロールします">
+                    <i class="material-icons white-text">arrow_upward</i>
+                </a>
             </div>
+
+            <div id="linkwarn" class="modal">
+                <div class="modal-content">
+                    <h4>警告</h4>
+                    <p id="warnmsg"></p>
+                </div>
+                <div class="modal-footer">
+                    <a class="modal-action modal-close waves-effect waves-red btn-flat link">いいえ</a>
+                    <a onclick="window.open(link)" class="modal-action waves-effect waves-green btn-flat link">はい</a>
+                </div>
+            </div>
+
         </div>
-
-    </div>
-    <script src="https://djs-jpn.ga/beta/cdn/js/jquery-3.3.1.min.js"></script>
-    <script src="https://djs-jpn.ga/beta/cdn/js/materialize.min.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js"></script>
-    <script type="text/javascript">
-        window.jQuery || alert("読み込みに失敗しました");
-
-        var link = "";
-
-        var NhCRHtBnbWbgjJMDBbFbpxryZhKmPXlk = "UIGDSYsQkInaNpPMsStIwUamGovIuglg";
-
-        var TjtQpaxCeASruFDdTWrdKxxQYZBesdrp = "";
-
-        $(".g-recaptcha").fadeOut(0);
-
-        function getproxstats() {
-            $.get("https://jsonip.com", function (r) {
-                TjtQpaxCeASruFDdTWrdKxxQYZBesdrp = r.ip;
-                $.get("https://proxycheck.io/v2/" + TjtQpaxCeASruFDdTWrdKxxQYZBesdrp, { vpn: 1 }, function (r) {
-                    if (r.status == "ok") {
-                        NhCRHtBnbWbgjJMDBbFbpxryZhKmPXlk = r[TjtQpaxCeASruFDdTWrdKxxQYZBesdrp].proxy;
-                    }
-                    load();
-                });
-            });
-        }
-
-        if (navigator.userAgent.toLowerCase().match(/chrome|firefox|opera/)) {
-            $(".loading").text("読み込み中...");
-        } else {
-            $(".loading").text("Chrome、Firefox、Operaでの閲覧をお勧めします");
-        }
-
-        $(window).on("load", function () {
-            getproxstats();
-        });
-
-        function load() {
-            $(".loading").fadeOut(1000);
-            setTimeout(function () {
-                if (NhCRHtBnbWbgjJMDBbFbpxryZhKmPXlk != "UIGDSYsQkInaNpPMsStIwUamGovIuglg") {
-                    if (NhCRHtBnbWbgjJMDBbFbpxryZhKmPXlk == "yes") {
-                        $(".loading").text("プロキシが検出されました");
-                        $(".loading").fadeIn(1000);
-                        $(".g-recaptcha").fadeIn(1000);
-                    } else {
-                        $(".loading").text("読み込みが完了しました");
-                        $(".loading").fadeIn(1000);
-                        setTimeout(function () {
-                            $(".preloader-background").fadeOut(500);
-                            $("#main").delay(500).fadeIn(500);
-                            $("title").text("DJS-JPN - 今の Discord ボットにはないものを目指して...");
-                            $("html").css("cursor", "auto")
-                            setTimeout(function () {
-                                M.toast({ html: "DJS-JPN 公式サイトへようこそ！" });
-                            }, 1000);
-                        }, 1000);
-                    }
-                } else {
-                    $(".loading").text("読み込みに失敗しました");
-                    $(".loading").fadeIn(1000);
-                    setTimeout(function () {
-                        $(".loading").fadeOut(1000);
-                        setTimeout(function () {
-                            if (navigator.userAgent.toLowerCase().match(/chrome|firefox|opera/)) {
-                                $(".loading").text("読み込み中...");
-                            } else {
-                                $(".loading").text("Chrome、Firefox、Operaでの閲覧をお勧めします");
-                            }
-                            $(".loading").fadeIn(1000);
-                            setTimeout(function () {
-                                getproxstats();
-                            }, 1000);
-                        }, 1000);
-                    }, 2000);
-                }
-            }, 1000);
-        }
-
-        function khORyggZxvYitoQSPajRPidrNctAfVmI(c) {
-            if (c) {
-                if (c.length >= 526) {
-                    $(".loading").fadeOut(1000);
-                    $(".g-recaptcha").fadeOut(1000);
-                    setTimeout(function () {
-                        $(".loading").text("読み込みが完了しました");
-                        $(".loading").fadeIn(1000);
-                        setTimeout(function () {
-                            $(".preloader-background").fadeOut(500);
-                            $("#main").delay(500).fadeIn(500);
-                            $("title").text("DJS-JPN - 今の Discord ボットにはないものを目指して...");
-                            $("html").css("cursor", "auto")
-                            setTimeout(function () {
-                                M.toast({ html: "DJS-JPN 公式サイトへようこそ！" });
-                            }, 1000);
-                        }, 1000);
-                    }, 1000);
-                } else {
-                    $(".loading").fadeOut(1000);
-                    $(".g-recaptcha").fadeOut(1000);
-                    setTimeout(function () {
-                        $(".loading").text("不正なアクセスが検出されました");
-                        $(".loading").fadeIn(1000);
-                    }, 1000);
-                }
-            } else {
-                $(".loading").fadeOut(1000);
-                $(".g-recaptcha").fadeOut(1000);
-                setTimeout(function () {
-                    $(".loading").text("不正なアクセスが検出されました");
-                    $(".loading").fadeIn(1000);
-                }, 1000);
-            }
-        }
-
-        $(".tooltipped").tooltip({
-            inDuration: 500,
-            outDuration: 500,
-        });
-
-        $(".dropdown").dropdown({
-            coverTrigger: false,
-            inDuration: 500,
-            outDuration: 500
-        });
-
-        $(".modal").modal({
-            inDuration: 500,
-            outDuration: 500,
-            dismissible: false
-        });
-
-        $("#totop").click(function () {
-            $("body,html").animate({ scrollTop: 0 }, 500);
-            return false;
-        });
-
-        $("html").bind("contextmenu", function () { return false; });
-
-        function setlink(l) {
-            link = l;
-            if (l.slice(0, 18) == "https://djs-jpn.ga") {
-                $("#warnmsg").text("外部ページ " + l + " へとジャンプします。外部ページへとジャンプしてもよろしいでしょうか？（リンクは新しいタブで開かれます）");
-            } else {
-                $("#warnmsg").text("外部サイト " + l + " へとジャンプします。外部サイトへとジャンプしてもよろしいでしょうか？（リンクは新しいタブで開かれます）");
-            }
-        }
-    </script>
-</body>
+        <script src="https://djs-jpn.ga/beta/cdn/js/jquery-3.3.1.min.js"></script>
+        <script src="https://djs-jpn.ga/beta/cdn/js/materialize.min.js"></script>
+        <script src="https://djs-jpn.ga/beta/cdn/js/core.js"></script>
+        <script src="https://www.google.com/recaptcha/api.js"></script>
+    </body>
 
 </html>
