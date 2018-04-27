@@ -64,10 +64,10 @@ $(".modal").modal({
 
 $("html")
     .bind("touchstart touchmove", function () {
-        $("#totop").fadeOut(100);
+        $("#totop").css("visibility", "hidden");
     })
     .bind("touchend", function () {
-        $("#totop").fadeIn(100);
+        $("#totop").css("visibility", "visible");
     });
 
 $("html").bind("contextmenu", function () { return false; });
@@ -94,7 +94,7 @@ function getproxstats() {
             FakeAd.innerHTML = "&nbsp";
             FakeAd.className = "adsbygoogle";
             document.body.appendChild(FakeAd);
-            window.setTimeout(function () {
+            setTimeout(function () {
                 if (FakeAd.offsetHeight === 0) {
                     adblock = true;
                 }

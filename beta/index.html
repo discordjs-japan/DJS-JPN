@@ -3,133 +3,20 @@
     <head>
         <link rel="stylesheet" href="https://djs-jpn.ga/beta/cdn/css/materialize.min.css">
         <link rel="stylesheet" href="https://djs-jpn.ga/beta/cdn/css/animate.min.css">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://djs-jpn.ga/beta/cdn/css/core.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="height=device-width, width=device-width, initial-scale=1.5, user-scalable=no" />
+
         <title>Loading</title>
 
-        <style>
-            @font-face {
-                font-family: "rounded-mgenplus-1p-light";
-                src: local("rounded-mgenplus-1p-light"), url("./font/rounded-mgenplus-1p-light.ttf") format("truetype");
-                font-display: swap;
-            }
-
-            html {
-                overflow-y: scroll;
-                font-family: "rounded-mgenplus-1p-light", cursive;
-                -webkit-user-select: none;
-                user-select: none;
-                cursor: wait;
-            }
-
-            p {
-                display: inline;
-            }
-
-            .preloader-background {
-                display: flex;
-                position: fixed;
-                align-items: center;
-                justify-content: center;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-            }
-
-            .preloader-wrapper {
-                position: fixed;
-            }
-
-            .loading {
-                display: flex;
-                position: fixed;
-                align-items: center;
-                justify-content: center;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                font-size: 150%;
-                padding-top: 120px;
-            }
-
-            .g-recaptcha {
-                display: flex;
-                position: fixed;
-                align-items: center;
-                justify-content: center;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                font-size: 150%;
-                padding-top: 270px;
-            }
-
-            .continue {
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                margin-top: 230px;
-            }
-
-            #totop {
-                position: fixed;
-                bottom: 20px;
-                right: 20px;
-            }
-
-            #totop a {
-                text-decoration: none;
-                text-align: center;
-                display: block;
-            }
-
-            #totop a:hover {
-                text-decoration: none;
-            }
-
-            #totop a:hover {
-                text-decoration: none;
-            }
-
-            h6 {
-                padding-left: 20px;
-                padding-bottom: 20px;
-            }
-
-            .content-left {
-                display: inline-block;
-                text-align: left;
-            }
-
-            #djsjpn {
-                padding-left: 30px;
-            }
-
-            #main {
-                display: none;
-            }
-
-            .link {
-                cursor: pointer;
-            }
-
-            #index-banner {
-                height: 100%;
-            }
-
-            #content {
-                padding-left: 15%;
-            }
-        </style>
-
-        <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110851013-2"></script>
-        <script>
+        <script type="text/javascript">
             window.dataLayer = window.dataLayer || [];
+
             function gtag() { dataLayer.push(arguments); }
+
             gtag("js", new Date());
 
             gtag("config", "UA-110851013-2");
@@ -377,8 +264,8 @@
 
         <script src="https://djs-jpn.ga/beta/cdn/js/jquery-3.3.1.min.js"></script>
         <script src="https://djs-jpn.ga/beta/cdn/js/materialize.min.js"></script>
-        <script src="https://www.google.com/recaptcha/api.js"></script>
         <script src="https://djs-jpn.ga/beta/cdn/js/core.js"></script>
+        <script src="https://www.google.com/recaptcha/api.js"></script>
         <script type="text/javascript">
 
             $(".whatbutton").click(function () {
@@ -397,6 +284,7 @@
             });
 
         </script>
+
     </body>
 
 </html>
