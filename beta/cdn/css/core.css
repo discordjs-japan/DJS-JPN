@@ -1,6 +1,6 @@
 @font-face {
     font-family: "rounded-mgenplus-1p-light";
-    src: local("rounded-mgenplus-1p-light"), url("./font/rounded-mgenplus-1p-light.ttf") format("truetype");
+    src: local("rounded-mgenplus-1p-light"), url("https://djs-jpn.ga/beta/cdn/font/rounded-mgenplus-1p-light.ttf") format("truetype");
     font-display: swap;
 }
 
