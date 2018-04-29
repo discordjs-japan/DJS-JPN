@@ -4,15 +4,14 @@ $(".g-recaptcha").fadeOut(0);
 
 $(".continue").fadeOut(0);
 
-if (navigator.userAgent.toLowerCase().match(/chrome|firefox|opera/)) {
-    $(".loading").text("読み込み中...");
-} else {
-    $(".loading").text("Chrome、Firefox、Operaでの閲覧をお勧めします");
+if (!navigator.userAgent.toLowerCase().match(/android|iphone|ipad/)) {
+    $("#index-banner").css("height", "100%");
+    $("#navoya").addClass("navbar-fixed");
 }
 
 var link = "";
 
-var adblock = false;
+var RZUsYiJFwZJWGODVvYdRnCwRVwlcKRUN = false;
 
 var NhCRHtBnbWbgjJMDBbFbpxryZhKmPXlk = "UIGDSYsQkInaNpPMsStIwUamGovIuglg";
 
@@ -20,29 +19,26 @@ var TjtQpaxCeASruFDdTWrdKxxQYZBesdrp = "";
 
 $.ajaxSetup({ cache: false });
 
-$("#totop").click(function () {
+$("#totop a").click(function () {
     $("body,html").animate({ scrollTop: 0 }, 500);
-    return false;
 });
 
 $(".continue").click(function () {
     $(".loading").fadeOut(1000);
-    $(".continue").fadeOut(1000);
-    setTimeout(function () {
+    $(".continue").fadeOut(1000).delay(300).promise().done(function () {
         $(".loading").text("読み込みが完了しました");
-        $(".loading").fadeIn(1000);
-        setTimeout(function () {
+        $(".loading").fadeIn(1000).promise().done(function () {
             $(".preloader-background").fadeOut(1000);
-            $("#main").fadeIn(1000);
-            $("title").text("DJS-JPN - 今の Discord ボットにはないものを目指して...");
-            $("html").css("cursor", "auto");
-            setTimeout(function () {
+            $("#main").fadeIn(1000).promise().done(function () {
                 M.toast({ html: "DJS-JPN 公式サイトへようこそ！" });
                 M.toast({ html: "この通知は時間経過で自動で閉じられます" });
                 M.toast({ html: "もし邪魔な場合はスライドで消すこともできます" });
-            }, 1000);
-        }, 1300);
-    }, 1000);
+            });
+            $("html,body").animate({ scrollTop: $("#what").offset().top }, 0);
+            $("title").text("DJS-JPN - 今の Discord ボットにはないものを目指して...");
+            $("html").css("cursor", "auto");
+        });
+    });
 });
 
 $(".tooltipped").tooltip({
@@ -62,8 +58,15 @@ $(".modal").modal({
     dismissible: false
 });
 
+$(".sidenav").sidenav({
+    inDuration: 500,
+    outDuration: 500
+});
+
+$(".parallax").parallax();
+
 $("html")
-    .bind("touchstart touchmove", function () {
+    .bind("touch", function () {
         $("#totop").css("visibility", "hidden");
     })
     .bind("touchend", function () {
@@ -96,7 +99,7 @@ function getproxstats() {
             document.body.appendChild(FakeAd);
             setTimeout(function () {
                 if (FakeAd.offsetHeight === 0) {
-                    adblock = true;
+                    RZUsYiJFwZJWGODVvYdRnCwRVwlcKRUN = true;
                 }
                 FakeAd.remove();
                 load();
@@ -117,7 +120,7 @@ function load() {
                 }, 500);
                 $(".g-recaptcha").fadeIn(1000);
             } else {
-                if (adblock) {
+                if (RZUsYiJFwZJWGODVvYdRnCwRVwlcKRUN) {
                     $(".loading").text("アドブロックが検出されました");
                     $(".loading").fadeIn(1000);
                     $(".continue").fadeIn(1000);
@@ -141,18 +144,19 @@ function load() {
                     }, 1500);
                 } else {
                     $(".loading").text("読み込みが完了しました");
-                    $(".loading").fadeIn(1000);
-                    setTimeout(function () {
-                        $(".preloader-background").fadeOut(1000);
-                        $("#main").fadeIn(1000);
-                        $("title").text("DJS-JPN - 今の Discord ボットにはないものを目指して...");
-                        $("html").css("cursor", "auto");
-                        setTimeout(function () {
-                            M.toast({ html: "DJS-JPN 公式サイトへようこそ！" });
-                            M.toast({ html: "この通知は時間経過で自動で閉じられます" });
-                            M.toast({ html: "もし邪魔な場合はスライドで消すこともできます" });
-                        }, 1000);
-                    }, 1000);
+                    $(".loading").fadeOut(1000).promise().done(function () {
+                        $(".loading").text("読み込みが完了しました");
+                        $(".loading").fadeIn(1000).promise().done(function () {
+                            $(".preloader-background").fadeOut(1000);
+                            $("#main").fadeIn(1000).promise().done(function () {
+                                M.toast({ html: "DJS-JPN 公式サイトへようこそ！" });
+                                M.toast({ html: "この通知は時間経過で自動で閉じられます" });
+                                M.toast({ html: "もし邪魔な場合はスライドで消すこともできます" });
+                            });
+                            $("title").text("DJS-JPN - 今の Discord ボットにはないものを目指して...");
+                            $("html").css("cursor", "auto");
+                        });
+                    });
                 }
             }
         } else {
@@ -179,7 +183,7 @@ function load() {
 function khORyggZxvYitoQSPajRPidrNctAfVmI(c) {
     if (c) {
         if (c.length >= 526) {
-            if (adblock) {
+            if (RZUsYiJFwZJWGODVvYdRnCwRVwlcKRUN) {
                 $(".loading").fadeOut(1000);
                 $(".g-recaptcha").fadeOut(1000);
                 setTimeout(function () {

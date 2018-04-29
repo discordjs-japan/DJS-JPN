@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
         <meta charset="UTF-8" />
-        <meta name="viewport" content="height=device-width, width=device-width, initial-scale=1.5, user-scalable=no" />
+        <meta name="viewport" content="width=device-width,initial-scale=1">
 
         <title>Loading</title>
 
@@ -15,7 +15,9 @@
         <script type="text/javascript">
             window.dataLayer = window.dataLayer || [];
 
-            function gtag() { dataLayer.push(arguments); }
+            function gtag() {
+                dataLayer.push(arguments);
+            }
 
             gtag("js", new Date());
 
@@ -76,65 +78,77 @@
                     </div>
                 </div>
             </div>
-            <h6 class="loading"></h6>
+            <h6 class="loading">読み込み中...</h6>
             <noscript class="loading">JavaScript を有効にしてください</noscript>
             <div style="visibility: hidden;" class="g-recaptcha" data-sitekey="6LftelQUAAAAAIwWMWko5p7NRJAKEAisVXS2buRA" data-callback="khORyggZxvYitoQSPajRPidrNctAfVmI"></div>
             <a style="visibility: hidden;" class="btn-large waves-effect waves-light light-blue whatbutton z-depth-5 continue disabled">3</a>
         </div>
 
         <div id="main">
-            <nav>
-                <div class="nav-wrapper light-blue accent-2">
-                    <a href="https://djs-jpn.ga" class="brand-logo" id="djsjpn">DJS-JPN</a>
-                    <ul id="nav-mobile" class="right hide-on-med-and-down">
-                        <li>
-                            <a class="whatbutton">DJS-JPN とは？</a>
-                        </li>
-                        <li>
-                            <a id="groupbutton">グループの目的</a>
-                        </li>
-                        <li>
-                            <a id="cooperatebutton">DJS-JPN に加わりたい</a>
-                        </li>
-                        <li>
-                            <a class="dropdown" data-target="dwlang">言語
-                                <i class="material-icons right">arrow_drop_down</i>
-                            </a>
-
-                            <ul id='dwlang' class='dropdown-content'>
+            <div id="navoya">
+                <nav>
+                    <div class="nav-wrapper light-blue accent-2">
+                        <a href="https://djs-jpn.ga" class="brand-logo" id="djsjpn">
+                            <p class="blue-text">DJS</p>-<p class="red-text">JPN</p>
+                        </a>
+                        <ul class="right hide-on-med-and-down">
+                            <ul id="nav-mobile" class="right show-on-med-and-down">
                                 <li>
-                                    <a>日本語</a>
+                                    <a class="whatbutton">
+                                        <i class="material-icons right">help</i>DJS-JPN とは？</a>
+                                </li>
+                                <li>
+                                    <a id="groupbutton">
+                                        <i class="material-icons right">flag</i>グループの目的</a>
+                                </li>
+                                <li>
+                                    <a id="cooperatebutton">
+                                        <i class="material-icons right">people</i>DJS-JPN に加わりたい</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown" data-target="dwlang">
+                                        <i class="material-icons right">language</i>言語
+                                    </a>
+                                    <ul id='dwlang' class='dropdown-content'>
+                                        <li>
+                                            <a>日本語</a>
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-
-            <div class="section no-pad-bot light-blue accent-2" id="index-banner">
-                <div class="container">
-                    <br>
-                    <br>
-                    <h1 class="header center">
-                        <p class="indigo-text">DJS</p>-<p class="red-text">JPN</p>
-                    </h1>
-                    <div class="row center">
-                        <h5 class="header col s12 light">今の Discord ボットにはないものを目指して...</h5>
                     </div>
-                    <div class="row center">
-                        <a class="btn-large waves-effect waves-light light-blue whatbutton z-depth-5">DJS-JPN とは？</a>
-                    </div>
-                    <br>
-                    <br>
-                </div>
+                </nav>
             </div>
 
-            <div id="content">
+            <div class="parallax-container center valign-wrapper" id="index-banner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s12 white-text">
+                            <h1 class="header center">
+                                <p class="indigo-text">DJS</p>-<p class="red-text">JPN</p>
+                            </h1>
+                            <div class="row center">
+                                <h5 class="header col s12 light">今の Discord ボットにはないものを目指して...</h5>
+                            </div>
+                            <div class="row center">
+                                <a class="btn-large waves-effect waves-light light-blue tooltipped link what-button z-depth-5">DJS-JPN とは？</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                <h5 class="black-text" id="what" style="padding-top: 20px;">DJS-JPN とは？</h5>
+                <div class="parallax">
+                    <img src="http://www.bhmpics.com/wallpapers/blue_water_green_nature-1280x800.jpg">
+                </div>
+
+            </div>
+
+            <div class="center">
+
+                <h5 class="black-text" id="what" style="padding-top: 3%;">DJS-JPN とは？</h5>
 
                 <br>
-                <h6 class="black-text content-left">
+                <h6 class="black-text">
 
                     DJS-JPN (Discord.JS Japan) は、主に
                     <a class="tooltipped link modal-trigger" data-target="linkwarn" onclick="setlink('https://discord.js.org');" data-position="top"
@@ -154,13 +168,13 @@
                 <h5 class="black-text" id="group">グループの目的</h5>
 
                 <br>
-                <h6 class="black-text content-left">１．今の Discord ボットには存在しないような機能を搭載する Discord ボットを開発する。</h6>
+                <h6 class="black-text">１．今の Discord ボットには存在しないような機能を搭載する Discord ボットを開発する。</h6>
 
                 <br>
                 <h5 class="black-text" id="cooperate">DJS-JPN に加わりたい</h5>
 
                 <br>
-                <h6 class="black-text content-left">DJS-JPNの開発メンバーになるには条件が必要です。
+                <h6 class="black-text">DJS-JPNの開発メンバーになるには条件が必要です。
                     <br>
                     <br>１．JavaScript、Node.js、Discord.jsを理解している
                     <br>２．Discord、Githubのアカウントを持っている
@@ -184,11 +198,13 @@
                 </div>
             </div>
 
-            <footer class="page-footer light-blue">
+            <footer class="page-footer light-blue accent-2">
                 <div class="container">
                     <div class="row">
                         <div class="col l6 s12">
-                            <h5>DJS-JPN</h5>
+                            <h5>
+                                <p class="indigo-text">DJS</p>-<p class="red-text">JPN</p>
+                            </h5>
                             <p class="white-text">今の Discord ボットにはないものを目指して...</p>
                         </div>
                         <div class="col l3 s12">
@@ -221,7 +237,8 @@
                             <ul>
                                 <li>
                                     <a class="white-text tooltipped link modal-trigger" data-target="linkwarn" onclick="setlink('https://discordapp.com/invite/DbTpjXV');"
-                                        data-position="top" data-tooltip="https://discordapp.com/invite/DbTpjXV">公式 Discord グループ</a>
+                                        data-position="top" data-tooltip="https://discordapp.com/invite/DbTpjXV">公式 Discord グループ
+                                    </a>
                                 </li>
                                 <li>
                                     <a class="white-text tooltipped link modal-trigger" data-target="linkwarn" onclick="setlink('https://plus.google.com/communities/102065506910522266374');"
@@ -236,9 +253,10 @@
                     </div>
                 </div>
 
-                <div class="footer-copyright light-blue darken-2">
+                <div class="footer-copyright light-blue accent-3">
                     <div class="container">
-                        Designed by NULL Code JP
+                        <p class="left white-text">Designed by NULL Code JP</p>
+                        <p class="right white-text">Organized by InkoHX</a>
                     </div>
                 </div>
             </footer>
@@ -269,7 +287,7 @@
         <script type="text/javascript">
 
             $(".whatbutton").click(function () {
-                $("html,body").animate({ scrollTop: $("#what").offset().top }, 500);;
+                $("html,body").animate({ scrollTop: $("#what").offset().top }, 500);
                 return false;
             });
 
