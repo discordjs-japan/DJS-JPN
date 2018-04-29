@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
         <meta charset="UTF-8" />
-        <meta name="viewport" content="height=device-width, width=device-width, initial-scale=1.5, user-scalable=no" />
+        <meta name="viewport" content="width=device-width,initial-scale=1">
 
         <title>Loading</title>
 
@@ -15,7 +15,9 @@
         <script type="text/javascript">
             window.dataLayer = window.dataLayer || [];
 
-            function gtag() { dataLayer.push(arguments); }
+            function gtag() {
+                dataLayer.push(arguments);
+            }
 
             gtag("js", new Date());
 
@@ -76,58 +78,64 @@
                     </div>
                 </div>
             </div>
-            <h6 class="loading"></h6>
+            <h6 class="loading">読み込み中...</h6>
             <noscript class="loading">JavaScript を有効にしてください</noscript>
             <div style="visibility: hidden;" class="g-recaptcha" data-sitekey="6LftelQUAAAAAIwWMWko5p7NRJAKEAisVXS2buRA" data-callback="khORyggZxvYitoQSPajRPidrNctAfVmI"></div>
             <a style="visibility: hidden;" class="btn-large waves-effect waves-light light-blue whatbutton z-depth-5 continue disabled">3</a>
         </div>
 
         <div id="main">
-            <nav>
-                <div class="nav-wrapper light-blue accent-2">
-                    <a href="https://djs-jpn.ga" class="brand-logo" id="djsjpn">DJS-JPN</a>
-                    <ul id="nav-mobile" class="right hide-on-med-and-down">
-                        <li>
-                            <a class="bladebutton">ボット一覧</a>
-                        </li>
-                        <li>
-                            <a class="bladebutton">Blade</a>
-                        </li>
-                        <li>
-                            <a id="ncbutton">NightCrystal</a>
-                        </li>
-                        <li>
-                            <a class="dropdown" data-target="dwlang">言語
-                                <i class="material-icons right">arrow_drop_down</i>
-                            </a>
-
-                            <ul id='dwlang' class='dropdown-content'>
+            <div id="navoya">
+                <nav>
+                    <div class="nav-wrapper light-blue accent-2">
+                        <a href="https://djs-jpn.ga" class="brand-logo" id="djsjpn">
+                            <p class="blue-text">DJS</p>-<p class="red-text">JPN</p>
+                        </a>
+                        <ul class="right hide-on-med-and-down">
+                            <ul id="nav-mobile" class="right show-on-med-and-down">
                                 <li>
-                                    <a>日本語</a>
+                                    <a class="bladebutton">Blade</a>
+                                </li>
+                                <li>
+                                    <a id="nightcrystalbuttonr">Night Crystal</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown" data-target="dwlang">
+                                        <i class="material-icons right">language</i>言語
+                                    </a>
+                                    <ul id='dwlang' class='dropdown-content'>
+                                        <li>
+                                            <a>日本語</a>
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+                    </div>
+                </nav>
+            </div>
 
-            <div class="section no-pad-bot light-blue accent-2" id="index-banner">
+            <div class="parallax-container center valign-wrapper" id="index-banner">
                 <div class="container">
-                    <br>
-                    <br>
-                    <h1 class="header center">
-                        <p class="blue-text">DJS</p>-<p class="red-text">JPN</p>
-                    </h1>
-                    <div class="row center">
-                        <h5 class="header col s12 light">今の Discord ボットにはないものを目指して...</h5>
+                    <div class="row">
+                        <div class="col s12 white-text">
+                            <h1 class="header center">
+                                <p class="indigo-text">DJS</p>-<p class="red-text">JPN</p>
+                            </h1>
+                            <div class="row center">
+                                <h5 class="header col s12 light">今の Discord ボットにはないものを目指して...</h5>
+                            </div>
+                            <div class="row center">
+                                <a class="btn-large waves-effect waves-light light-blue tooltipped link z-depth-5 modal-trigger" class="tooltipped link"
+                                    data-position="top" data-tooltip="https://djs-jpn.ga/beta" data-target="linkwarn" onclick="setlink('https://djs-jpn.ga/beta');">ホーム</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="row center">
-                        <a class="btn-large waves-effect waves-light light-blue tooltipped link" onclick="window.open('https://djs-jpn.ga/beta')"
-                            class="tooltipped link" data-position="top" data-tooltip="https://djs-jpn.ga/beta">ホーム</a>
-                    </div>
-                    <br>
-                    <br>
                 </div>
+
+                <div class="parallax">
+                    <img src="http://www.bhmpics.com/wallpapers/blue_water_green_nature-1280x800.jpg">
+                </div>
+
             </div>
 
             <div class="row cardjoin">
@@ -145,11 +153,13 @@
                 </div>
             </div>
 
-            <footer class="page-footer light-blue">
+            <footer class="page-footer light-blue accent-2">
                 <div class="container">
                     <div class="row">
                         <div class="col l6 s12">
-                            <h5>DJS-JPN</h5>
+                            <h5>
+                                <p class="indigo-text">DJS</p>-<p class="red-text">JPN</p>
+                            </h5>
                             <p class="white-text">今の Discord ボットにはないものを目指して...</p>
                         </div>
                         <div class="col l3 s12">
@@ -182,7 +192,8 @@
                             <ul>
                                 <li>
                                     <a class="white-text tooltipped link modal-trigger" data-target="linkwarn" onclick="setlink('https://discordapp.com/invite/DbTpjXV');"
-                                        data-position="top" data-tooltip="https://discordapp.com/invite/DbTpjXV">公式 Discord グループ</a>
+                                        data-position="top" data-tooltip="https://discordapp.com/invite/DbTpjXV">公式 Discord グループ
+                                    </a>
                                 </li>
                                 <li>
                                     <a class="white-text tooltipped link modal-trigger" data-target="linkwarn" onclick="setlink('https://plus.google.com/communities/102065506910522266374');"
@@ -197,9 +208,10 @@
                     </div>
                 </div>
 
-                <div class="footer-copyright light-blue darken-2">
+                <div class="footer-copyright light-blue accent-3">
                     <div class="container">
-                        Designed by NULL Code JP
+                        <p class="left white-text">Designed by NULL Code JP</p>
+                        <p class="right white-text">Organized by InkoHX</a>
                     </div>
                 </div>
             </footer>
@@ -214,13 +226,13 @@
                 <div class="modal-content">
                     <h4>警告</h4>
                     <p id="warnmsg"></p>
+                    <br>
                 </div>
                 <div class="modal-footer">
                     <a class="modal-action modal-close waves-effect waves-red btn-flat link">いいえ</a>
                     <a onclick="window.open(link)" class="modal-action waves-effect waves-green btn-flat link">はい</a>
                 </div>
             </div>
-
         </div>
 
         <script src="https://djs-jpn.ga/beta/cdn/js/jquery-3.3.1.min.js"></script>
