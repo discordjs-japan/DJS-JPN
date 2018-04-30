@@ -81,7 +81,7 @@
             <h6 class="loading">読み込み中...</h6>
             <noscript class="loading">JavaScript を有効にしてください</noscript>
             <div style="visibility: hidden;" class="g-recaptcha" data-sitekey="6LftelQUAAAAAIwWMWko5p7NRJAKEAisVXS2buRA" data-callback="khORyggZxvYitoQSPajRPidrNctAfVmI"></div>
-            <a style="visibility: hidden;" class="btn-large waves-effect waves-light light-blue whatbutton z-depth-5 continue disabled">3</a>
+            <a style="visibility: hidden;" class="btn-large waves-effect waves-light light-blue z-depth-5 continue disabled">3</a>
         </div>
 
         <div id="main">
@@ -94,10 +94,14 @@
                         <ul class="right hide-on-med-and-down">
                             <ul id="nav-mobile" class="right show-on-med-and-down">
                                 <li>
-                                    <a class="bladebutton">Blade</a>
+                                    <a id="cmdlistbtn">
+                                        <i class="material-icons right">format_list_bulleted</i>ボット一覧</a>
                                 </li>
                                 <li>
-                                    <a id="nightcrystalbuttonr">Night Crystal</a>
+                                    <a class="bladebtn">Blade</a>
+                                </li>
+                                <li>
+                                    <a id="nightcrystalbtn">Night Crystal</a>
                                 </li>
                                 <li>
                                     <a class="dropdown" data-target="dwlang">
@@ -138,6 +142,32 @@
 
             </div>
 
+            <ul class="collection with-header z-depth-3" style="width: 50%; margin-top: 30px; margin-left: 10px; ">
+                <li class="collection-header">
+                    <h4>ボット一覧</h4>
+                </li>
+                <li class="collection-item avatar">
+                    <a class="white-text tooltipped link modal-trigger" data-target="linkwarn" onclick="setlink('https://djs-jpn.ga/beta/bots/Blade');"
+                        data-position="top" data-tooltip="https://djs-jpn.ga/beta/bots/Blade">
+                        <img src="https://djs-jpn.ga/beta/cdn/image/Blade.png" alt="Blade" class="circle">
+                    </a>
+                    <span class="title">Blade</span>
+                    <br>
+                    <p>Night Crystal の後継ぎとなったボットです。
+                        <br>現在も開発が頻繁に行われており、機能が続々と追加されていっています。</p>
+                </li>
+                <li class="collection-item avatar">
+                    <a class="white-text tooltipped link modal-trigger" data-target="linkwarn" onclick="setlink('https://djs-jpn.ga/beta/bots/NightCrystal');"
+                        data-position="top" data-tooltip="https://djs-jpn.ga/beta/bots/NightCrystal">
+                        <img src="https://djs-jpn.ga/beta/cdn/image/NightCrystal.png" alt="Night Crystal" class="circle link">
+                    </a>
+                    <span class="title">Night Crystal</span>
+                    <br>
+                    <p>一番最初に開発され、後に Blade の元となったボットです。
+                        <br>現在は開発が停止されていますが GitHub リポジトリとして残されています。</p>
+                </li>
+            </ul>
+
             <div class="row cardjoin">
                 <div class="col s12 m6">
                     <div class="card light-blue z-depth-5">
@@ -163,7 +193,8 @@
                             <p class="white-text">今の Discord ボットにはないものを目指して...</p>
                         </div>
                         <div class="col l3 s12">
-                            <h5 class="white-text">リンク一覧</h5>
+                            <h5 class="white-text tooltipped link modal-trigger" data-target="linkwarn" onclick="setlink('https://djs-jpn.ga/beta/related');"
+                                data-position="top" data-tooltip="https://djs-jpn.ga/beta/pages">ページ一覧</h5>
                             <ul>
                                 <li>
                                     <a class="white-text tooltipped link modal-trigger" data-target="linkwarn" onclick="setlink('https://djs-jpn.ga/beta/bots');"
@@ -187,8 +218,10 @@
                                 </li>
                             </ul>
                         </div>
+
                         <div class="col l3 s12">
-                            <h5 class="white-text tooltipped" data-position="left" data-tooltip="DJS-JPNと繋がろう">Connect</h5>
+                            <h5 class="white-text tooltipped link modal-trigger" data-target="linkwarn" onclick="setlink('https://djs-jpn.ga/beta/connect');"
+                                data-position="top" data-tooltip="https://djs-jpn.ga/beta/connect">Connect</h5>
                             <ul>
                                 <li>
                                     <a class="white-text tooltipped link modal-trigger" data-target="linkwarn" onclick="setlink('https://discordapp.com/invite/DbTpjXV');"
