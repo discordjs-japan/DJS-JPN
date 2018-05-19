@@ -33,3 +33,5 @@ DJS-JPNの開発メンバーになるには条件が必要です。
 [Google+](https://goo.gl/53RQNf)
 
 [新デザイン](https://djs-jpn.ga/beta)
+
+[DJS-JPNに居るボットリスト](https://djs-jpn.ga/discord/bots)
