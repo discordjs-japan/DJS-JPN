@@ -4,6 +4,7 @@
 | [Dyno](https://www.dynobot.net/) | サーバー管理ボット |
 | [Blade](https://github.com/DJS-JPN/Blade) | DJS-JPNが開発した多機能(?)ボット |
 | [GENERAL](https://general.inkohx.xyz) | InkoHXが開発したボット |
+| [RedMusic](https://github.com/jagrosh/MusicBot) | Javaで作られた音楽ボット |
 | 名無し | よくわからない() |
 | BlueSky | InkoHXが開発した多機能ボット |
 | [Nulling](https://github.com/NULL-Coding/Nulling) | NULL Code JPが開発したボット |
