@@ -18,3 +18,4 @@
 | [DISBOARD](https://disboard.org) | サーバーリストボット |
 | [Discordちゃんねる(β)](https://discha.net/) | サーバーリストボット |
 | [DSL Bot](https://discord.sl) | サーバーリストボット |
+| Ciri | Geraltさんが作ったボット |

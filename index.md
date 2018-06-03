@@ -20,7 +20,7 @@ DJS-JPNの開発メンバーになるには条件が必要です。
 > ## DJS-JPNの参加候補方法  
 [DJS-JPN（Discord）](https://discord.gg/DbTpjXV)のチャンネル#general_devまたはDiscordでInkoHX#8927のDMにGitHubの名前とURLの送信をお願いします。
 
-<iframe src="https://discordapp.com/widget?id=391390986770710528&theme=dark" width="820" height="500" allowtransparency="true" frameborder="0"></iframe>
+<iframe src="https://discordapp.com/widget?id=391390986770710528&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
 
 ## 関連リンク
 
