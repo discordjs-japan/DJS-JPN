@@ -20,3 +20,4 @@
 | [Discordちゃんねる(β)](https://discha.net/) | サーバーリストボット |
 | [DSL Bot](https://discord.sl) | サーバーリストボット |
 | Ciri | Geraltさんが作ったボット |
+| [ServerHound](https://discordlist.net/) | サーバーリスト&荒らし対策ボット |
