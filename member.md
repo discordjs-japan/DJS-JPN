@@ -7,3 +7,4 @@
 1. [NULL-Coding](https://github.com/NULL-Coding) (Member)
 1. [KolletRibbon](https://github.com/kolletribbon) (Member)
 1. [rht0910](https://github.com/rht0910) (Member)
+1. [Lazyuki](https://github.com/Lazyuki) (Member)
