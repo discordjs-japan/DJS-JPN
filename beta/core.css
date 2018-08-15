@@ -4,10 +4,6 @@
     font-display: swap;
 }
 
-p {
-    display: inline;
-}
-
 html {
     font-family: "rounded-mgenplus-1p-light", cursive;
 }
@@ -21,20 +17,19 @@ html {
 }
 
 #top {
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
     opacity: 0;
-    animation-fill-mode: forwards;
+    visibility: hidden;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
 }
 
-.social {
-    -webkit-transition: .5s;
-    -moz-transition: .5s;
-    -o-transition: .5s;
-    transition: .5s;
+.animation {
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
 }
 
 .social:hover {
@@ -43,12 +38,6 @@ html {
     -o-filter: invert(80%);
     -ms-filter: invert(80%);
     filter: invert(80%);
-}
-
-#top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
 }
 
 .btn,

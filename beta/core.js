@@ -10,11 +10,17 @@ $(window).scroll(function () {
 
     if ($(window).scrollTop() + $(window).height() > $(window).height()) {
 
-        $(`#top`).css(`opacity`, 1);
+        $(`#top`).css({
+            visibility: `visible`,
+            opacity: 1,
+        });
 
     } else {
 
-        $(`#top`).css(`opacity`, 0);
+        $(`#top`).css({
+            visibility: `hidden`,
+            opacity: 0,
+        });
 
     }
 
