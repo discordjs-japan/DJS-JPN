@@ -6,6 +6,20 @@ $(window).on(`load`, () => {
 
 });
 
+$(window).scroll(function () {
+
+    if ($(window).scrollTop() + $(window).height() > $(window).height()) {
+
+        $(`#top`).css(`opacity`, 1);
+
+    } else {
+
+        $(`#top`).css(`opacity`, 0);
+
+    }
+
+});
+
 $(`a,.force-link`).click((element) => {
 
     if (element.currentTarget.id === `top_a`) return;
