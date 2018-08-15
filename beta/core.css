@@ -16,6 +16,10 @@ html {
     filter: blur(5px);
 }
 
+.container {
+    padding: 20px 0 30px;
+}
+
 #top {
     opacity: 0;
     visibility: hidden;
