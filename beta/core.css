@@ -50,9 +50,34 @@ html {
     border-radius: 30px;
 }
 
-.parallax-container {
+.max {
     width: 100%;
     height: 100%;
+}
+
+.parallax {
+    background: url("https://djs-jpn.ga/beta/uploads/img/parallax.png") no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.parallax:before {
+    content: "";
+    background: inherit;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
 }
 
 .sk-cube-grid {

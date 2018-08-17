@@ -1,8 +1,9 @@
 $(window).on(`load`, () => {
 
-    $(`.sk-cube-grid`).fadeOut(1000);
-
-    $(`.parallax`).parallax();
+    $(`.sk-cube-grid`).css({
+        visibility: `hidden`,
+        opacity: 0,
+    });
 
 });
 
