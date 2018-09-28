@@ -1,6 +1,6 @@
 @font-face {
     font-family: "rounded-mgenplus-1p-light";
-    src: local("rounded-mgenplus-1p-light"), url("https://djs-jpn.ga/beta/uploads/font/rounded-mgenplus-1p-light.ttf") format("truetype");
+    src: local("rounded-mgenplus-1p-light"), url("./uploads/font/rounded-mgenplus-1p-light.ttf") format("truetype");
     font-display: swap;
 }
 
@@ -56,7 +56,7 @@ html {
 }
 
 .parallax {
-    background: url("https://djs-jpn.ga/beta/uploads/img/parallax.png") no-repeat center;
+    background: url("./uploads/img/parallax.png") no-repeat center;
     background-attachment: fixed;
     background-size: cover;
     position: relative;
