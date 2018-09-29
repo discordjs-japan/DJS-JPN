@@ -1,0 +1,40 @@
+<html lang="ja">
+
+<head>{% include head.html %}</head>
+
+<body>
+
+    {% include loading.html %}
+
+    <div class="valign-wrapper max parallax">
+        <div class="container">
+            <div class="row">
+                <h1 class="header center">
+                    <span class="light-blue-text">DJS</span>
+                    <span class="white-text">-</span>
+                    <span class="red-text">JPN</span>
+                </h1>
+                <div class="row center">
+                    <h5 class="header col s12 white-text">今の Discord ボットにはないものを目指して...</h5>
+                </div>
+                <div class="row center">
+                    <a href="https://github.com/DJS-JPN" class="btn-large waves-effect waves-light light-blue z-depth-5">GitHub</a>
+                    <a href="https://discordapp.com/invite/6DuyES3" class="btn-large waves-effect waves-light light-blue z-depth-5" style="margin-left: 10px">Discord</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="markdown-body container">{{content}}</div>
+
+    {% include footer.html %}
+
+    {% include scroll.html %}
+
+    <script src="../assets/js/jQuery-3.3.1.min.js"></script>
+    <script src="../assets/js/materialize-1.0.0-rc.2.min.js"></script>
+    <script src="../assets/js/core.js"></script>
+
+</body>
+
+</html>

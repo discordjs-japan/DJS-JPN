@@ -1,6 +1,8 @@
+---
+layout: home
+title: トップページ
+---
 # DJS-JPN
-> ## 注意
-このページは旧デザインとして扱われており、[こちら](https://djs-jpn.ga/beta)から新デザインのページへと行けますが、新デザインは現在制作途中ですので、ご注意ください。
 
 [Discord.js](https://discord.js.org)を使ったDiscordのボットを開発をしているグループです。
 
@@ -13,11 +15,11 @@
 > ## DJS-JPNの開発メンバーになりたい方へ  
 DJS-JPNの開発メンバーになるには条件が必要です。
 
-１．JavaScript、Discord.jsが理解できる方  
-２．Discord、Githubのアカウントを持っている方
+1. JavaScript、Discord.jsが理解できる方  
+2. Discord、Githubのアカウントを持っている方
 
 上記の条件が完了していれば招待を送ります。
-> ## DJS-JPNの参加候補方法  
+> ## DJS-JPNの参加申請
 [DJS-JPN（Discord）](https://discord.gg/DbTpjXV)のチャンネル#general_devまたはDiscordでInkoHX#8927のDMにGitHubの名前とURLの送信をお願いします。
 
 <iframe src="https://discordapp.com/widget?id=391390986770710528&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>

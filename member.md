@@ -1,3 +1,8 @@
+---
+layout: page
+title: 開発メンバー
+description: DJS-JPN に所属するメンバーの一覧です
+---
 # 開発メンバー
 1. [InkoHX](https://github.com/InkoHX) (Owner)
 1. [NightCrystal](https://github.com/NightCrystal169) (Member)

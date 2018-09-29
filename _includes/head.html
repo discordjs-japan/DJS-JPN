@@ -1,0 +1,44 @@
+<title>{% if page.title && page.layouts == "home" %}{{ page.title }} | DJS-JPN{% else %}DJS-JPN{% endif %}</title>
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="description" content="{{description}}" />
+<meta name="author" content="DJS-JPN" />
+<meta name="copyright" content="© 2018 DJS-JPN" />
+<meta name="keywords" content="djs-jpn" />
+<meta name="language" content="Japanese" />
+<meta name="google" content="nositelinkssearchbox" />
+<meta name="format-detection" content="telephone=no,email=no,address=no">
+<meta name="msapplication-TileImage" content="./favicon.ico">
+<meta name="google-site-verification" content="7bSqi6NUQTBvFksuCmU1Ppk8cjV4u7YwM206NvrQn30" />
+<meta name="twitter:site" content="@InkoHX" />
+
+<meta property="og:title" content="{% if page.title %}{{ page.title }} | DJS-JPN{% else %}DJS-JPN{% endif %}" />
+<meta property="og:site_name" content="DJS-JPN" />
+<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
+<meta property="og:image" content="./favicon.ico" />
+<meta property="og:url" content="{{ page.url | absolute_url }}" />
+<meta property="og:locale" content="ja_JP" />
+
+<meta http-equiv="Content-Language" content="ja">
+<meta http-equiv="Content-Type" content="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<link rel="shortcut icon" href="./favicon.ico">
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+
+<link rel="stylesheet" href="../assets/css/materialize-1.0.0-rc.2.min.css" />
+<link rel="stylesheet" href="../assets/css/Material Icons.css" />
+<link rel="stylesheet" href="../assets/css/github-markdown.css" />
+<link rel="stylesheet" href="../assets/css/core.css" />
+
+{% if site.google_analytics %}
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', '{{ site.google_analytics }}', 'auto');
+    ga('send', 'pageview');
+  </script>
+{% endif %}

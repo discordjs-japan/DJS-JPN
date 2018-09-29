@@ -1,3 +1,7 @@
+---
+layout: page
+title: 開発したBOT一覧
+---
 # 開発したBOT一覧
 組織が開発しているBOT一覧です。
 
