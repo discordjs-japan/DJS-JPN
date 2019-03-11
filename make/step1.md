@@ -42,4 +42,4 @@ node-opusをオススメします。
 #### 注意: `<ここに入れます>` は消してClientIDを入れて下さい
 
 
-[次](https://djs-jpn.ga/make/step2)
+[次](https://djs-jpn.tk/make/step2)

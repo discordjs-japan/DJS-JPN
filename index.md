@@ -10,7 +10,7 @@ title: トップページ
 1. 今のDiscordにないボットを作り上げる
 
 > ## Bladeについて質問がある  
-[こちら](https://djs-jpn.ga/help)をご確認ください。
+[こちら](https://djs-jpn.tk/help)をご確認ください。
 
 > ## DJS-JPNの開発メンバーになりたい方へ  
 DJS-JPNの開発メンバーになるには条件が必要です。
@@ -26,14 +26,14 @@ DJS-JPNの開発メンバーになるには条件が必要です。
 
 ## 関連リンク
 
-[DJS-JPNが開発したボット一覧](https://djs-jpn.ga/bots)
+[DJS-JPNが開発したボット一覧](https://djs-jpn.tk/bots)
 
-[開発メンバー](https://djs-jpn.ga/member)
+[開発メンバー](https://djs-jpn.tk/member)
 
-[Discord.jsを使ったボットの作成方法](https://djs-jpn.ga/make/step1)
+[Discord.jsを使ったボットの作成方法](https://djs-jpn.tk/make/step1)
 
 [Google+](https://goo.gl/53RQNf)
 
-[新デザイン](https://djs-jpn.ga/beta)
+[新デザイン](https://djs-jpn.tk/beta)
 
-[DJS-JPNに居るボットリスト](https://djs-jpn.ga/discord/bots)
+[DJS-JPNに居るボットリスト](https://djs-jpn.tk/discord/bots)

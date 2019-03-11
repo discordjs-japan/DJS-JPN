@@ -11,7 +11,7 @@
 | [Nulling](https://github.com/NULL-Coding/Nulling) | NULL Code JPが開発したボット |
 | [NotSoBot](https://mods.nyc/help) | 多機能ボット |
 | [Tatusmaki](https://tatsumaki.xyz/) | 多機能ボット |
-| [IntroQuiz](https://github.com/DJS-JPN/IntroQuiz) | イントロクイズボット |
+| [IntroQuiz](https://github.com/discordjs-japan/IntroQuiz) | イントロクイズボット |
 | [WebMusic](https://github.com/IntegratedDevelopmentGroup/WebMusicBot) | 音楽ボット |
 | Coded Beta Core | 旧Nulling? |
 | [WidgetBot.io](https://widgetbot.io/) | なんかすごいやつ |
